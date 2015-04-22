@@ -452,6 +452,19 @@ def test_tidy_up_xml():
     assert xml_string2_tidy == xml_string2_tidy_expected
 
 
+def test_xml_is_equal():
+    xml1 = ET.fromstring(textwrap.dedent("""
+        <foo>
+           <bar>
+           </bar>
+        </foo>
+        """))
+    xml2 = ET.fromstring("<foo><bar/></foo>")
+    xml3 = ET.fromstring("<foo><baz></baz></foo>")
+    assert xml_is_equal(xml1, xml2)
+    assert not xml_is_equal(xml1, xml3)
+
+
 def test_extract_piece():
     div_str = "<divisions>768</divisions>"
     key_str = textwrap.dedent("""

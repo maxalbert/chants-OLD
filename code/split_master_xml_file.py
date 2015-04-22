@@ -38,6 +38,14 @@ def tidy_up_xml(xml_string, remove_newlines=False):
     return res.strip()
 
 
+def xml_is_equal(xml1, xml2):
+    xml1_string = ET.tostring(xml1, method='html')
+    xml2_string = ET.tostring(xml2, method='html')
+    xml1_tidy = tidy_up_xml(xml1_string, remove_newlines=True)
+    xml2_tidy = tidy_up_xml(xml2_string, remove_newlines=True)
+    return xml1_tidy == xml2_tidy
+
+
 def get_measure_number(element):
     check_xml_type(element, 'measure')
     attribs = element.attrib
