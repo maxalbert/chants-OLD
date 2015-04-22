@@ -123,7 +123,7 @@ class PieceCounter(object):
         self._last_was_final = True
         self.attributes = {name: None for name in self.attr_names}
 
-    def update_measure_attributes(self, m):
+    def update_last_measure_attributes(self, m):
         for name in self.attr_names:
             try:
                 self.attributes[name] = get_measure_attribute(m, name)
@@ -135,7 +135,7 @@ class PieceCounter(object):
             # Non-measure XML elements are ignored
             return
 
-        self.update_measure_attributes(m)
+        self.update_last_measure_attributes(m)
 
         if is_initial_measure(m) and self._last_was_final:
             self.cnt += 1
