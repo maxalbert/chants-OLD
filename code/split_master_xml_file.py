@@ -91,25 +91,36 @@ def get_measure_attribute(m, name):
     return attr
 
 
-def update_measure_attributes(m1, m2, inplace=False):
+def get_measure_attributes(m):
+    res = {}
+    for name in PieceCounter.attr_names:
+        try:
+            res[name] = get_measure_attribute(m, name)
+        except AttributeError:
+            pass
+            #res[name] = None
+    return res
+
+
+def update_measure_attributes(m, attrs, inplace=False):
     """
     Updates the attributes key, clef, time, divsions of `m1` with
     those of `m2` if they are not defined yet.
 
     """
-    check_xml_type(m1, 'measure')
-    check_xml_type(m2, 'measure')
+    check_xml_type(m, 'measure')
+    assert isinstance(attrs, dict)
 
-    result = m1 if inplace else copy.deepcopy(m1)
+    result = m if inplace else copy.deepcopy(m)
 
     for name in PieceCounter.attr_names:
         try:
             attr1 = get_measure_attribute(result, name)
         except AttributeError:
             try:
-                attr2 = get_measure_attribute(m2, name)
+                attr2 = attrs[name]
                 result.append(attr2)
-            except AttributeError:
+            except KeyError:
                 continue
 
     return result
@@ -121,12 +132,12 @@ class PieceCounter(object):
     def __init__(self):
         self.cnt = 0
         self._last_was_final = True
-        self.attributes = {name: None for name in self.attr_names}
+        self.last_measure_attributes = {name: None for name in self.attr_names}
 
     def update_last_measure_attributes(self, m):
         for name in self.attr_names:
             try:
-                self.attributes[name] = get_measure_attribute(m, name)
+                self.last_measure_attributes[name] = get_measure_attribute(m, name)
             except AttributeError:
                 pass
 
@@ -155,6 +166,7 @@ def extract_piece(xml_string, number):
                 if pc.cnt != number:
                     node.remove(child)
                 else:
+                    update_measure_attributes(child, pc.last_measure_attributes, inplace=True)
                     piece_found = True
             else:
                 piece_found_child = process_node(child, piece_found)

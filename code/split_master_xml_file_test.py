@@ -195,7 +195,7 @@ def test_get_measure_attribute():
         get_measure_attribute('foo', 'key')
 
 
-def test_update_measure_attribues():
+def test_update_measure_attributes():
     div_str = "<divisions>768</divisions>"
     key_str = "<key><fifths>0</fifths><mode>major</mode></key>"
     key_str_2 = "<key><fifths>1</fifths><mode>major</mode></key>"
@@ -220,31 +220,31 @@ def test_update_measure_attribues():
         with pytest.raises(AttributeError):
             get_measure_attribute(m, name)
 
-    m01 = update_measure_attributes(m0, m1)
+    m01 = update_measure_attributes(m0, get_measure_attributes(m1))
     assert_attribute_equal(m01, 'divisions', div_str)
     assert_attribute_equal(m01, 'key', key_str)
     assert_has_not_attribute(m01, 'clef')
     assert_has_not_attribute(m01, 'time')
 
-    m02 = update_measure_attributes(m0, m2)
+    m02 = update_measure_attributes(m0, get_measure_attributes(m2))
     assert_attribute_equal(m02, 'clef', clef_str)
     assert_attribute_equal(m02, 'key', key_str_2)
     assert_attribute_equal(m02, 'time', time_str)
     assert_has_not_attribute(m02, 'divisions')
 
-    m03 = update_measure_attributes(m0, m3)
+    m03 = update_measure_attributes(m0, get_measure_attributes(m3))
     assert_attribute_equal(m03, 'time', time_str_2)
     assert_has_not_attribute(m03, 'key')
     assert_has_not_attribute(m03, 'clef')
     assert_has_not_attribute(m03, 'divisions')
 
-    m12 = update_measure_attributes(m1, m2)
+    m12 = update_measure_attributes(m1, get_measure_attributes(m2))
     assert_attribute_equal(m12, 'divisions', div_str)
     assert_attribute_equal(m12, 'clef', clef_str)
     assert_attribute_equal(m12, 'key', key_str)  # should not be updated because it already exists in m1!
     assert_attribute_equal(m12, 'time', time_str)
 
-    m123 = update_measure_attributes(m12, m3)
+    m123 = update_measure_attributes(m12, get_measure_attributes(m3))
     assert_attribute_equal(m123, 'divisions', div_str)
     assert_attribute_equal(m123, 'clef', clef_str)
     assert_attribute_equal(m123, 'key', key_str)
@@ -255,7 +255,7 @@ def test_update_measure_attribues():
     assert_attribute_equal(m1, 'key', key_str)
     assert_has_not_attribute(m1, 'clef')
     assert_has_not_attribute(m1, 'time')
-    update_measure_attributes(m1, m2, inplace=True)
+    update_measure_attributes(m1, get_measure_attributes(m2), inplace=True)
     assert_attribute_equal(m1, 'divisions', div_str)
     assert_attribute_equal(m1, 'clef', clef_str)
     assert_attribute_equal(m1, 'key', key_str)  # should not be updated because it already exists in m1!
@@ -375,24 +375,24 @@ class TestPieceCounter():
             assert xml2str(attrs) == xml2str(attrs_expected)
 
         pc = PieceCounter()
-        assert_attributes_equal(pc.attributes, {'divisions': None, 'key': None, 'clef': None, 'time': None})
+        assert_attributes_equal(pc.last_measure_attributes, {'divisions': None, 'key': None, 'clef': None, 'time': None})
 
         pc.consume(m1)
-        assert_attributes_equal(pc.attributes,
+        assert_attributes_equal(pc.last_measure_attributes,
                                 str2xml({'divisions': self.div_str_1,
                                          'key': self.key_str_1,
                                          'clef': None,
                                          'time': self.time_str_1}))
 
         pc.consume(m2)
-        assert_attributes_equal(pc.attributes,
+        assert_attributes_equal(pc.last_measure_attributes,
                                 str2xml({'divisions': self.div_str_2,
                                          'key': self.key_str_1,
                                          'clef': self.clef_str_2,
                                          'time': self.time_str_1}))
 
         pc.consume(m3)
-        assert_attributes_equal(pc.attributes,
+        assert_attributes_equal(pc.last_measure_attributes,
                                 str2xml({'divisions': self.div_str_2,
                                          'key': self.key_str_1,
                                          'clef': self.clef_str_2,
