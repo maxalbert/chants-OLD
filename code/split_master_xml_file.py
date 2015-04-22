@@ -17,6 +17,10 @@ def check_xml_type(element, xml_type):
         raise TypeError("XML Element is not of type '{}': {}".format(xml_type, element))
 
 
+def is_xml_measure(element):
+    return isinstance(element, ET.Element) and element.tag == 'measure'
+
+
 def get_measure_number(element):
     check_xml_type(element, 'measure')
     attribs = element.attrib

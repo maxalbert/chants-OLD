@@ -4,6 +4,33 @@ import xml.etree.ElementTree as ET
 from split_master_xml_file import *
 
 
+def make_measure_xml(number, bar_style, note=None):
+    if bar_style is None:
+        bar_xml = ""
+    else:
+        assert isinstance(bar_style, str)
+        bar_xml = """
+            <barline location='right'>
+                <bar-style>{bar_style}</bar-style>
+            </barline>""".format(bar_style=bar_style)
+
+    if note is None:
+        note_xml = ""
+    else:
+        assert isinstance(note, str)
+        note_xml = "<note>{}</note>".format(note)
+
+    xml = "<measure number='{number}'>{note_xml}{bar_xml}</measure>".format(
+        number=number, note_xml=note_xml, bar_xml=bar_xml)
+
+    return xml
+
+
+def make_measure(number, bar_style, note=None):
+    xml = make_measure_xml(number, bar_style, note=note)
+    return ET.fromstring(xml)
+
+
 def test_check_xml_type():
     # These should pass
     check_xml_type(ET.fromstring("<measure><note></note></measure>"), 'measure')
@@ -12,6 +39,20 @@ def test_check_xml_type():
     for x in ['foo', 42, ET.fromstring("<note></note>")]:
         with pytest.raises(TypeError):
             check_xml_type(x, 'measure')
+
+
+def test_is_xml_measure():
+    m1 = make_measure(1, None, 'a')
+    m2 = make_measure(1, 'light-heary', 'a')
+    m3 = ET.fromstring("<note></note>")
+    m4 = ET.fromstring("<foo></foo>")
+
+    assert is_xml_measure(m1)
+    assert is_xml_measure(m2)
+    assert not is_xml_measure(m3)
+    assert not is_xml_measure(m4)
+    assert not is_xml_measure("foo")
+    assert not is_xml_measure(42)
 
 
 def test_get_measure_number():
@@ -47,33 +88,6 @@ def test_is_initial_measure():
 
     with pytest.raises(TypeError):
         is_initial_measure(m5)
-
-
-def make_measure_xml(number, bar_style, note=None):
-    if bar_style is None:
-        bar_xml = ""
-    else:
-        assert isinstance(bar_style, str)
-        bar_xml = """
-            <barline location='right'>
-                <bar-style>{bar_style}</bar-style>
-            </barline>\n""".format(bar_style=bar_style)
-
-    if note is None:
-        note_xml = ""
-    else:
-        assert isinstance(note, str)
-        note_xml = "<note>{}</note>".format(note)
-
-    xml = "<measure number='{number}'>{note_xml}{bar_xml}</measure>".format(
-        number=number, note_xml=note_xml, bar_xml=bar_xml)
-
-    return xml
-
-
-def make_measure(number, bar_style, note=None):
-    xml = make_measure_xml(number, bar_style, note=note)
-    return ET.fromstring(xml)
 
 
 def test_is_final_measure_candidate():
@@ -204,3 +218,53 @@ def test_PieceCounter():
     check_consume(pc, m2, 0)
     check_consume(pc, m3, 0)
     check_consume(pc, m1, 1)
+
+
+def make_piece_xml(measure_strings):
+    def indent(s, num):
+        lines = s.split('\n')
+        return '\n'.join([" "*num + l for l in lines])
+    measures_indented = [indent(m, 20) for m in measure_strings]
+    xml = textwrap.dedent("""
+        <score-partwise version='3.0'>
+            <part id='P1'>\n{}
+            </part>
+        </score-partwise>
+        """.format('\n'.join(measures_indented)))
+    return xml
+
+
+def test_extract_piece():
+    measures_piece_1 = [
+        make_measure_xml(1, None, 'a'),
+        make_measure_xml(2, None, 'b'),
+        make_measure_xml(5, None, 'c'),
+        make_measure_xml(1, None, 'd'),
+        make_measure_xml(3, None, 'e'),
+        make_measure_xml(7, None, 'f'),
+        make_measure_xml(8, 'light-heavy', 'g'),
+        ]
+
+    measures_piece_2 = [
+        make_measure_xml(1, None, 'h'),
+        make_measure_xml(2, None, 'i'),
+        make_measure_xml(4, 'light-heavy', 'j'),
+        make_measure_xml(5, None, 'k'),
+        make_measure_xml(7, None, 'l'),
+        ]
+
+    xml_full = make_piece_xml(measures_piece_1 + measures_piece_2)
+    xml_piece_1 = make_piece_xml(measures_piece_1)
+    xml_piece_2 = make_piece_xml(measures_piece_2)
+
+    xml_piece_1_extracted = extract_piece(xml_full, 1)
+    xml_piece_2_extracted = extract_piece(xml_full, 2)
+
+    assert xml_piece_1 == xml_piece_1_extracted
+    assert xml_piece_2 == xml_piece_2_extracted
+
+    with pytest.raises(NoSuchPieceError):
+        extract_piece(xml_full, 0)
+
+    with pytest.raises(NoSuchPieceError):
+        extract_piece(xml_full, 3)
