@@ -163,8 +163,6 @@ def extract_piece(xml_string, number):
     pc = PieceCounter()
     tree = ET.fromstring(xml_string)
 
-    parent_map = dict((c, p) for p in tree.getiterator() for c in p)
-
     def process_node(node, piece_found):
         for child in list(node):
             if is_xml_measure(child):
