@@ -4,7 +4,7 @@ import xml.etree.ElementTree as ET
 from split_master_xml_file import *
 
 
-def make_measure_xml(number, bar_style, note=None):
+def make_measure_xml(number, bar_style, note=None, extra_string=""):
     if bar_style is None:
         bar_xml = ""
     else:
@@ -20,14 +20,14 @@ def make_measure_xml(number, bar_style, note=None):
         assert isinstance(note, str)
         note_xml = "<note>{}</note>".format(note)
 
-    xml = "<measure number='{number}'>{note_xml}{bar_xml}</measure>".format(
-        number=number, note_xml=note_xml, bar_xml=bar_xml)
+    xml = "<measure number='{number}'>{note_xml}{bar_xml}{extra_string}</measure>".format(
+        number=number, note_xml=note_xml, bar_xml=bar_xml, extra_string=extra_string)
 
     return xml
 
 
-def make_measure(number, bar_style, note=None):
-    xml = make_measure_xml(number, bar_style, note=note)
+def make_measure(number, bar_style, note=None, extra_string=""):
+    xml = make_measure_xml(number, bar_style, note=note, extra_string=extra_string)
     return ET.fromstring(xml)
 
 
@@ -258,8 +258,60 @@ def test_tidy_up_xml():
 
 
 def test_extract_piece():
+    attr_string_1 = textwrap.dedent("""
+        <attributes>
+            <divisions>768</divisions>
+            <key>
+                <fifths>0</fifths>
+                <mode>major</mode>
+            </key>
+            <time>
+                <beats>15</beats>
+                <beat-type>4</beat-type>
+            </time>
+            <clef>
+                <sign>G</sign>
+                <line>2</line>
+                <clef-octave-change>-1</clef-octave-change>
+            </clef>
+        </attributes>
+        """)
+
+    attr_string_2 = textwrap.dedent("""
+        <attributes>
+            <clef>
+                <sign>G</sign>
+                <line>2</line>
+                <clef-octave-change>-1</clef-octave-change>
+            </clef>
+            <time>
+                <beats>15</beats>
+                <beat-type>4</beat-type>
+            </time>
+        </attributes>
+        """)
+
+    attr_string_2_full = textwrap.dedent("""
+        <attributes>
+            <clef>
+                <sign>G</sign>
+                <line>2</line>
+                <clef-octave-change>-1</clef-octave-change>
+            </clef>
+            <time>
+                <beats>15</beats>
+                <beat-type>4</beat-type>
+            </time>
+            <divisions>768</divisions>
+            <key>
+                <fifths>0</fifths>
+                <mode>major</mode>
+            </key>
+        </attributes>
+        """)
+
     measures_piece_1 = [
-        make_measure_xml(1, None, 'a'),
+        make_measure_xml(1, None, 'a', extra_string=attr_string_1),
         make_measure_xml(2, None, 'b'),
         make_measure_xml(5, None, 'c'),
         make_measure_xml(1, None, 'd'),
@@ -268,8 +320,19 @@ def test_extract_piece():
         make_measure_xml(8, 'light-heavy', 'g'),
         ]
 
+    piece_2_first_measure = make_measure_xml(1, None, 'h', extra_string=attr_string_2)
+    piece_2_first_measure_full = make_measure_xml(1, None, 'h', extra_string=attr_string_2_full)
+
     measures_piece_2 = [
-        make_measure_xml(1, None, 'h'),
+        piece_2_first_measure,
+        make_measure_xml(2, None, 'i'),
+        make_measure_xml(4, 'light-heavy', 'j'),
+        make_measure_xml(5, None, 'k'),
+        make_measure_xml(7, None, 'l'),
+        ]
+
+    measures_piece_2_expected = [
+        piece_2_first_measure_full,
         make_measure_xml(2, None, 'i'),
         make_measure_xml(4, 'light-heavy', 'j'),
         make_measure_xml(5, None, 'k'),
@@ -277,14 +340,14 @@ def test_extract_piece():
         ]
 
     xml_full = make_piece_xml(measures_piece_1 + measures_piece_2)
-    xml_piece_1 = make_piece_xml(measures_piece_1)
-    xml_piece_2 = make_piece_xml(measures_piece_2)
+    xml_piece_1_expected = make_piece_xml(measures_piece_1)
+    xml_piece_2_expected = make_piece_xml(measures_piece_2_expected)
 
     xml_piece_1_extracted = extract_piece(xml_full, 1)
     xml_piece_2_extracted = extract_piece(xml_full, 2)
 
-    assert tidy_up_xml(xml_piece_1) == tidy_up_xml(xml_piece_1_extracted)
-    assert tidy_up_xml(xml_piece_2) == tidy_up_xml(xml_piece_2_extracted)
+    assert tidy_up_xml(xml_piece_1_expected) == tidy_up_xml(xml_piece_1_extracted)
+    assert tidy_up_xml(xml_piece_2_expected) == tidy_up_xml(xml_piece_2_extracted)
 
     with pytest.raises(NoSuchPieceError):
         extract_piece(xml_full, 0)
