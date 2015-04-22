@@ -166,19 +166,19 @@ def test_get_measure_attribute():
     m3 = make_measure(9, None, extra_string=attrs3)
     m4 = make_measure(9, None)
 
-    def assert_attributes_equal(m, name, attr_string):
+    def assert_attribute_equal(m, name, attr_string):
         a = get_measure_attribute(m, name)
         assert ET.tostring(a) == attr_string
 
-    assert_attributes_equal(m1, 'divisions', div_str)
-    assert_attributes_equal(m1, 'clef', clef_str)
-    assert_attributes_equal(m1, 'time', time_str)
+    assert_attribute_equal(m1, 'divisions', div_str)
+    assert_attribute_equal(m1, 'clef', clef_str)
+    assert_attribute_equal(m1, 'time', time_str)
 
-    assert_attributes_equal(m2, 'clef', clef_str)
-    assert_attributes_equal(m2, 'key', key_str)
-    assert_attributes_equal(m2, 'divisions', div_str)
+    assert_attribute_equal(m2, 'clef', clef_str)
+    assert_attribute_equal(m2, 'key', key_str)
+    assert_attribute_equal(m2, 'divisions', div_str)
 
-    assert_attributes_equal(m3, 'time', time_str)
+    assert_attribute_equal(m3, 'time', time_str)
 
     with pytest.raises(AttributeError):
         get_measure_attribute(m1, 'key')
@@ -193,6 +193,62 @@ def test_get_measure_attribute():
 
     with pytest.raises(TypeError):
         get_measure_attribute('foo', 'key')
+
+
+def test_update_measure_attribues():
+    div_str = "<divisions>768</divisions>"
+    key_str = "<key><fifths>0</fifths><mode>major</mode></key>"
+    key_str_2 = "<key><fifths>1</fifths><mode>major</mode></key>"
+    clef_str = "<clef><sign>G</sign><line>2</line><clef-octave-change>-1</clef-octave-change></clef>"
+    time_str = "<time><beats>15</beats><beat-type>4</beat-type></time>"
+    time_str_2 = "<time><beats>27</beats><beat-type>4</beat-type></time>"
+
+    attrs1 = div_str + key_str
+    attrs2 = clef_str + key_str_2 + time_str
+    attrs3 = time_str_2
+
+    m0 = make_measure(4, None)
+    m1 = make_measure(3, None, extra_string=attrs1)
+    m2 = make_measure(2, None, extra_string=attrs2)
+    m3 = make_measure(9, None, extra_string=attrs3)
+
+    def assert_attribute_equal(m, name, attr_string):
+        a = get_measure_attribute(m, name)
+        assert ET.tostring(a) == attr_string
+
+    def assert_has_not_attribute(m, name):
+        with pytest.raises(AttributeError):
+            get_measure_attribute(m, name)
+
+    m01 = update_measure_attributes(m0, m1)
+    assert_attribute_equal(m01, 'divisions', div_str)
+    assert_attribute_equal(m01, 'key', key_str)
+    assert_has_not_attribute(m01, 'clef')
+    assert_has_not_attribute(m01, 'time')
+
+    m02 = update_measure_attributes(m0, m2)
+    assert_attribute_equal(m02, 'clef', clef_str)
+    assert_attribute_equal(m02, 'key', key_str_2)
+    assert_attribute_equal(m02, 'time', time_str)
+    assert_has_not_attribute(m02, 'divisions')
+
+    m03 = update_measure_attributes(m0, m3)
+    assert_attribute_equal(m03, 'time', time_str_2)
+    assert_has_not_attribute(m03, 'key')
+    assert_has_not_attribute(m03, 'clef')
+    assert_has_not_attribute(m03, 'divisions')
+
+    m12 = update_measure_attributes(m1, m2)
+    assert_attribute_equal(m12, 'divisions', div_str)
+    assert_attribute_equal(m12, 'clef', clef_str)
+    assert_attribute_equal(m12, 'key', key_str)  # should not be updated because it already exists in m1!
+    assert_attribute_equal(m12, 'time', time_str)
+
+    m123 = update_measure_attributes(m12, m3)
+    assert_attribute_equal(m123, 'divisions', div_str)
+    assert_attribute_equal(m123, 'clef', clef_str)
+    assert_attribute_equal(m123, 'key', key_str)
+    assert_attribute_equal(m123, 'time', time_str)  # should not be updated because it already exists in m12!
 
 
 class TestPieceCounter():

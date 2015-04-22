@@ -91,6 +91,30 @@ def get_measure_attribute(m, name):
     return attr
 
 
+def update_measure_attributes(m1, m2):
+    """
+    Updates the attributes key, clef, time, divsions of `m1` with
+    those of `m2` if they are not defined yet.
+
+    """
+    check_xml_type(m1, 'measure')
+    check_xml_type(m2, 'measure')
+
+    result = copy.deepcopy(m1)
+
+    for name in PieceCounter.attr_names:
+        try:
+            attr1 = get_measure_attribute(result, name)
+        except AttributeError:
+            try:
+                attr2 = get_measure_attribute(m2, name)
+                result.append(attr2)
+            except AttributeError:
+                continue
+
+    return result
+
+
 class PieceCounter(object):
     attr_names = ['key', 'clef', 'time', 'divisions']
 
