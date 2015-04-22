@@ -452,6 +452,19 @@ def test_tidy_up_xml():
     assert xml_string2_tidy == xml_string2_tidy_expected
 
 
+def test_xml_strings_are_equivalent():
+    xml1 = textwrap.dedent("""
+        <foo>
+           <bar>
+           </bar>
+        </foo>
+        """)
+    xml2 = "<foo><bar/></foo>"
+    xml3 = "<foo><baz></baz></foo>"
+    assert xml_strings_are_equivalent(xml1, xml2)
+    assert not xml_strings_are_equivalent(xml1, xml3)
+
+
 def test_xml_is_equal():
     xml1 = ET.fromstring(textwrap.dedent("""
         <foo>

@@ -38,6 +38,12 @@ def tidy_up_xml(xml_string, remove_newlines=False):
     return res.strip()
 
 
+def xml_strings_are_equivalent(xml1_string, xml2_string):
+    xml1 = ET.fromstring(xml1_string)
+    xml2 = ET.fromstring(xml2_string)
+    return xml_is_equal(xml1, xml2)
+
+
 def xml_is_equal(xml1, xml2):
     xml1_string = ET.tostring(xml1, method='html')
     xml2_string = ET.tostring(xml2, method='html')
