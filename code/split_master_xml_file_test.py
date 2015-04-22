@@ -229,9 +229,32 @@ def make_piece_xml(measure_strings):
         <score-partwise version='3.0'>
             <part id='P1'>\n{}
             </part>
-        </score-partwise>
-        """.format('\n'.join(measures_indented)))
+        </score-partwise>""".format('\n'.join(measures_indented)))
     return xml
+
+
+def test_tidy_up_xml():
+    xml_string = textwrap.dedent("""
+        <score-partwise version='3.0'>
+            <part id='P1'>
+                <measure number='1'><note>a</note></measure>
+        <measure number='2'><note>b</note></measure>
+          </part>
+        <score-partwise>
+
+        """)
+
+    xml_string_tidy = tidy_up_xml(xml_string)
+
+    xml_string_tidy_expected = textwrap.dedent("""\
+        <score-partwise version='3.0'>
+        <part id='P1'>
+        <measure number='1'><note>a</note></measure>
+        <measure number='2'><note>b</note></measure>
+        </part>
+        <score-partwise>""")
+
+    assert xml_string_tidy == xml_string_tidy_expected
 
 
 def test_extract_piece():
@@ -260,8 +283,8 @@ def test_extract_piece():
     xml_piece_1_extracted = extract_piece(xml_full, 1)
     xml_piece_2_extracted = extract_piece(xml_full, 2)
 
-    assert xml_piece_1 == xml_piece_1_extracted
-    assert xml_piece_2 == xml_piece_2_extracted
+    assert tidy_up_xml(xml_piece_1) == tidy_up_xml(xml_piece_1_extracted)
+    assert tidy_up_xml(xml_piece_2) == tidy_up_xml(xml_piece_2_extracted)
 
     with pytest.raises(NoSuchPieceError):
         extract_piece(xml_full, 0)

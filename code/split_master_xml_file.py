@@ -1,4 +1,6 @@
 import xml.etree.ElementTree as ET
+import copy
+import re
 
 
 class MeasureNumberError(Exception):
@@ -6,6 +8,10 @@ class MeasureNumberError(Exception):
 
 
 class FinalMeasureError(Exception):
+    pass
+
+
+class NoSuchPieceError(Exception):
     pass
 
 
@@ -19,6 +25,14 @@ def check_xml_type(element, xml_type):
 
 def is_xml_measure(element):
     return isinstance(element, ET.Element) and element.tag == 'measure'
+
+
+def tidy_up_xml(xml_string):
+    lines = xml_string.split('\n')
+    lines_stripped = [l.strip() for l in lines]
+    lines_tidy = [re.sub('"', '\'', l) for l in lines_stripped]
+    res = '\n'.join(lines_tidy)
+    return res.strip()
 
 
 def get_measure_number(element):
@@ -84,3 +98,31 @@ class PieceCounter(object):
         if is_initial_measure(m) and self._last_was_final:
             self.cnt += 1
         self._last_was_final = is_final_measure_candidate(m)
+
+
+def extract_piece(xml_string, number):
+    pc = PieceCounter()
+    tree = ET.fromstring(xml_string)
+
+    parent_map = dict((c, p) for p in tree.getiterator() for c in p)
+
+    def process_node(node, piece_found):
+        for child in list(node):
+            if is_xml_measure(child):
+                pc.consume(child)
+                if pc.cnt != number:
+                    node.remove(child)
+                else:
+                    piece_found = True
+            else:
+                piece_found_child = process_node(child, piece_found)
+                piece_found = piece_found or piece_found_child
+
+        return piece_found
+
+    piece_found = process_node(tree, False)
+
+    if not piece_found:
+        raise NoSuchPieceError("Piece number #{} not found in XML string.".format(number))
+
+    return ET.tostring(tree)
