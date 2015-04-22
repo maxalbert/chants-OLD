@@ -27,11 +27,14 @@ def is_xml_measure(element):
     return isinstance(element, ET.Element) and element.tag == 'measure'
 
 
-def tidy_up_xml(xml_string):
+def tidy_up_xml(xml_string, remove_newlines=False):
     lines = xml_string.split('\n')
     lines_stripped = [l.strip() for l in lines]
     lines_tidy = [re.sub('"', '\'', l) for l in lines_stripped if l != ""]
-    res = '\n'.join(lines_tidy)
+    if remove_newlines:
+        res = ''.join(lines_tidy)
+    else:
+        res = '\n'.join(lines_tidy)
     return res.strip()
 
 

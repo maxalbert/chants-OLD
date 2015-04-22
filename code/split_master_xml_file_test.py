@@ -436,7 +436,20 @@ def test_tidy_up_xml():
         </part>
         <score-partwise>""")
 
+    xml_string2 = textwrap.dedent("""
+        <foo>
+           <bar>
+           </bar>
+           <baz>
+              <quux>a</quux>
+           </baz>
+        </foo>
+        """)
+    xml_string2_tidy = tidy_up_xml(xml_string2, remove_newlines=True)
+    xml_string2_tidy_expected = "<foo><bar></bar><baz><quux>a</quux></baz></foo>"
+
     assert xml_string_tidy == xml_string_tidy_expected
+    assert xml_string2_tidy == xml_string2_tidy_expected
 
 
 def test_extract_piece():
