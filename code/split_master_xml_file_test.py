@@ -465,6 +465,19 @@ def test_xml_is_equal():
     assert not xml_is_equal(xml1, xml3)
 
 
+def test_copy_element():
+    m_str = textwrap.dedent("""
+        <measure number='4'>
+            <note>a</note>
+            <foo></foo>
+        </measure>
+        """)
+    m = ET.fromstring(m_str)
+    m_copy = copy_element(m)
+    m_copy_expected = ET.fromstring("<measure number='4'></measure>")
+    assert xml_is_equal(m_copy, m_copy_expected)
+
+
 def test_copy_tree():
     tree_string = textwrap.dedent("""
         <root>

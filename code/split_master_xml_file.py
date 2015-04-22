@@ -139,11 +139,16 @@ def update_measure_attributes(m, attrs, inplace=False):
     return result
 
 
+def copy_element(elem):
+    result = ET.Element(elem.tag, attrib=elem.attrib)
+    result.text = elem.text
+    return result
+
+
 def copy_tree(tree):
     assert isinstance(tree, ET.Element)
 
-    result = ET.Element(tree.tag, attrib=tree.attrib)
-    result.text = tree.text
+    result = copy_element(tree)
     for child in tree:
         result.append(copy_tree(child))
 
