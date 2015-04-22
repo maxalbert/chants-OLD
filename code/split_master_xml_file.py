@@ -91,7 +91,7 @@ def get_measure_attribute(m, name):
     return attr
 
 
-def update_measure_attributes(m1, m2):
+def update_measure_attributes(m1, m2, inplace=False):
     """
     Updates the attributes key, clef, time, divsions of `m1` with
     those of `m2` if they are not defined yet.
@@ -100,7 +100,7 @@ def update_measure_attributes(m1, m2):
     check_xml_type(m1, 'measure')
     check_xml_type(m2, 'measure')
 
-    result = copy.deepcopy(m1)
+    result = m1 if inplace else copy.deepcopy(m1)
 
     for name in PieceCounter.attr_names:
         try:

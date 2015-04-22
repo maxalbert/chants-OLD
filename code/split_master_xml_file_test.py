@@ -250,6 +250,17 @@ def test_update_measure_attribues():
     assert_attribute_equal(m123, 'key', key_str)
     assert_attribute_equal(m123, 'time', time_str)  # should not be updated because it already exists in m12!
 
+    # Try update in-place
+    assert_attribute_equal(m1, 'divisions', div_str)
+    assert_attribute_equal(m1, 'key', key_str)
+    assert_has_not_attribute(m1, 'clef')
+    assert_has_not_attribute(m1, 'time')
+    update_measure_attributes(m1, m2, inplace=True)
+    assert_attribute_equal(m1, 'divisions', div_str)
+    assert_attribute_equal(m1, 'clef', clef_str)
+    assert_attribute_equal(m1, 'key', key_str)  # should not be updated because it already exists in m1!
+    assert_attribute_equal(m1, 'time', time_str)
+
 
 class TestPieceCounter():
     def setup(self):
