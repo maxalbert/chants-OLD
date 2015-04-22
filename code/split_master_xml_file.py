@@ -83,6 +83,14 @@ def is_chant_boundary(m1, m2):
     return is_final_measure_candidate(m1) and is_initial_measure(m2)
 
 
+def get_measure_attribute(m, name):
+    check_xml_type(m, 'measure')
+    attr = m.find(name)
+    if attr is None:
+        raise AttributeError("Measure has no attribute '{}'".format(name))
+    return attr
+
+
 class PieceCounter(object):
     def __init__(self):
         self.cnt = 0

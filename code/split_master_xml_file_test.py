@@ -151,6 +151,50 @@ def test_is_chant_boudary():
     assert not is_chant_boundary(m1, m5)
 
 
+def test_get_measure_attribute():
+    div_str = "<divisions>768</divisions>"
+    key_str = "<key><fifths>0</fifths><mode>major</mode></key>"
+    clef_str = "<clef><sign>G</sign><line>2</line><clef-octave-change>-1</clef-octave-change></clef>"
+    time_str = "<time><beats>15</beats><beat-type>4</beat-type></time>"
+
+    attrs1 = div_str + clef_str + time_str
+    attrs2 = clef_str + key_str + div_str
+    attrs3 = time_str
+
+    m1 = make_measure(4, None, extra_string=attrs1)
+    m2 = make_measure(2, None, extra_string=attrs2)
+    m3 = make_measure(9, None, extra_string=attrs3)
+    m4 = make_measure(9, None)
+
+    def assert_attributes_equal(m, name, attr_string):
+        a = get_measure_attribute(m, name)
+        assert ET.tostring(a) == attr_string
+
+    assert_attributes_equal(m1, 'divisions', div_str)
+    assert_attributes_equal(m1, 'clef', clef_str)
+    assert_attributes_equal(m1, 'time', time_str)
+
+    assert_attributes_equal(m2, 'clef', clef_str)
+    assert_attributes_equal(m2, 'key', key_str)
+    assert_attributes_equal(m2, 'divisions', div_str)
+
+    assert_attributes_equal(m3, 'time', time_str)
+
+    with pytest.raises(AttributeError):
+        get_measure_attribute(m1, 'key')
+    with pytest.raises(AttributeError):
+        get_measure_attribute(m1, 'foo')
+    with pytest.raises(AttributeError):
+        get_measure_attribute(m2, 'time')
+    with pytest.raises(AttributeError):
+        get_measure_attribute(m3, 'div')
+    with pytest.raises(AttributeError):
+        get_measure_attribute(m4, 'key')
+
+    with pytest.raises(TypeError):
+        get_measure_attribute('foo', 'key')
+
+
 class TestPieceCounter():
     def check_consume(self, pc, m, number):
         """
