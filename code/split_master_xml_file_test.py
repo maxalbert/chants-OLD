@@ -465,6 +465,36 @@ def test_xml_is_equal():
     assert not xml_is_equal(xml1, xml3)
 
 
+def test_copy_tree():
+    tree_string = textwrap.dedent("""
+        <root>
+           <divisions>768</divisions>
+           <key>
+               <fifths>0</fifths>
+               <mode>major</mode>
+           </key>
+           <child1>
+           </child1>
+           <child2>
+              <child2a>
+              </child2a>
+              <child2b>
+              </child2b>
+           </child2>
+           <child3>
+              <foo>
+                 <bar>a</bar>
+              </foo>
+           </child3>
+        </root>
+        """)
+    tree = ET.fromstring(tree_string)
+    tree2 = copy_tree(tree)
+
+    assert not (tree is tree2)
+    assert xml_is_equal(tree, tree2)
+
+
 def test_extract_piece():
     div_str = "<divisions>768</divisions>"
     key_str = textwrap.dedent("""

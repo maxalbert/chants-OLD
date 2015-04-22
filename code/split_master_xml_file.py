@@ -139,6 +139,17 @@ def update_measure_attributes(m, attrs, inplace=False):
     return result
 
 
+def copy_tree(tree):
+    assert isinstance(tree, ET.Element)
+
+    result = ET.Element(tree.tag, attrib=tree.attrib)
+    result.text = tree.text
+    for child in tree:
+        result.append(copy_tree(child))
+
+    return result
+
+
 class PieceCounter(object):
     attr_names = ['divisions', 'key', 'time', 'clef']
 
