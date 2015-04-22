@@ -583,8 +583,8 @@ def test_extract_piece():
     xml_piece_1_extracted = extract_piece(xml_full, 1)
     xml_piece_2_extracted = extract_piece(xml_full, 2)
 
-    assert tidy_up_xml(xml_piece_1_expected) == tidy_up_xml(xml_piece_1_extracted)
-    assert tidy_up_xml(xml_piece_2_expected) == tidy_up_xml(xml_piece_2_extracted)
+    assert xml_strings_are_equivalent(xml_piece_1_expected, xml_piece_1_extracted)
+    assert xml_strings_are_equivalent(xml_piece_2_expected, xml_piece_2_extracted)
 
     with pytest.raises(NoSuchPieceError):
         extract_piece(xml_full, 0)

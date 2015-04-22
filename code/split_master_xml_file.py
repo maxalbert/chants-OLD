@@ -192,27 +192,27 @@ class PieceCounter(object):
         self._last_was_final = is_final_measure_candidate(m)
 
 
+def copy_relevant_subtrees(node, pc, piece_number, piece_found):
+    node_out = copy_element(node)
+    for child in node:
+        if not is_xml_measure(child):
+            subtree, piece_found_subtree = copy_relevant_subtrees(child, pc, piece_number, piece_found)
+            piece_found = piece_found or piece_found_subtree
+            node_out.append(subtree)
+        else:
+            pc.consume(child)
+            if pc.cnt == piece_number:
+                piece_found = True
+                node_out.append(copy.deepcopy(child))
+    return node_out, piece_found
+
+
 def extract_piece(xml_string, number):
     pc = PieceCounter()
     tree = ET.fromstring(xml_string)
-
-    def process_node(node, piece_found):
-        for child in list(node):
-            if is_xml_measure(child):
-                pc.consume(child)
-                if pc.cnt != number:
-                    node.remove(child)
-                else:
-                    piece_found = True
-            else:
-                piece_found_child = process_node(child, piece_found)
-                piece_found = piece_found or piece_found_child
-
-        return piece_found
-
-    piece_found = process_node(tree, False)
+    tree_out, piece_found = copy_relevant_subtrees(tree, pc, number, False)
 
     if not piece_found:
         raise NoSuchPieceError("Piece number #{} not found in XML string.".format(number))
 
-    return ET.tostring(tree)
+    return ET.tostring(tree_out)
