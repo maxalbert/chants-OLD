@@ -40,6 +40,8 @@ def get_measure_number(element):
     attribs = element.attrib
     try:
         return int(attribs['number'])
+    except ValueError:
+        return attribs['number']
     except KeyError:
         raise MeasureNumberError("Measure has no 'number' attribute: '{}'".format(element))
 

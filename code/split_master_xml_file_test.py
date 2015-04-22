@@ -59,14 +59,16 @@ def test_get_measure_number():
     m1 = ET.fromstring("<measure number='1'></measure>")
     m2 = ET.fromstring("<measure number='3'></measure>")
     m3 = ET.fromstring("<measure number='42'></measure>")
-    m4 = ET.fromstring("<measure></measure>")
+    m4 = ET.fromstring("<measure number='X5'></measure>")
+    m5 = ET.fromstring("<measure></measure>")
 
     assert get_measure_number(m1) == 1
     assert get_measure_number(m2) == 3
     assert get_measure_number(m3) == 42
+    assert get_measure_number(m4) == 'X5'
 
     with pytest.raises(MeasureNumberError):
-        get_measure_number(m4)
+        get_measure_number(m5)
 
 
 def test_is_initial_measure():
