@@ -152,6 +152,9 @@ class PieceCounter(object):
 
         if is_initial_measure(m) and self._last_was_final:
             self.cnt += 1
+            print("[DDD] Found new piece: #{}".format(self.cnt))
+            import sys
+            sys.stdout.flush()
             update_measure_attributes(m, self.last_measure_attributes, inplace=True)
         self._last_was_final = is_final_measure_candidate(m)
 
