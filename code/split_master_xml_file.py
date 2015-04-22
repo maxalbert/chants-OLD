@@ -22,3 +22,14 @@ def is_initial_measure(element):
         return attribs['number'] == '1'
     except KeyError:
         return False
+
+
+def is_final_measure_candidate(element):
+    check_xml_type(element, 'measure')
+
+    try:
+        barline = element.find('barline')
+        barstyle = barline.find('bar-style')
+        return barstyle.text == 'light-heavy'
+    except AttributeError:
+        return False

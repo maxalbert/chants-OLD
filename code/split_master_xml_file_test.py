@@ -33,3 +33,34 @@ def test_is_initial_measure():
 
     with pytest.raises(TypeError):
         is_initial_measure(m5)
+
+
+def make_measure_xml(number, bar_style):
+    return textwrap.dedent("""
+        <measure number='{number}'>
+            <barline location='right'>
+                <bar-style>{bar_style}</bar-style>
+            </barline>
+        </measure>""".format(number=number, bar_style=bar_style))
+
+
+def test_is_final_measure_candidate():
+    """
+    Check whether a measure is a candidate the final measure of a chant.
+    This is the case iff it has a barline of type 'light-heavy'.
+    """
+    m1 = ET.fromstring(make_measure_xml(1, 'light-heavy'))
+    m2 = ET.fromstring(make_measure_xml(4, 'light-heavy'))
+    m3 = ET.fromstring(make_measure_xml(3, 'light-light'))
+    m4 = ET.fromstring(make_measure_xml(15, 'dashed'))
+    m5 = ET.fromstring(make_measure_xml(11, 'none'))
+    m6 = ET.fromstring("<measure number='12'></measure>")
+    m7 = ET.fromstring("<measure number='9'><barline></barline></measure>")
+
+    assert is_final_measure_candidate(m1)
+    assert is_final_measure_candidate(m2)
+    assert not is_final_measure_candidate(m3)
+    assert not is_final_measure_candidate(m4)
+    assert not is_final_measure_candidate(m5)
+    assert not is_final_measure_candidate(m6)
+    assert not is_final_measure_candidate(m7)
