@@ -127,7 +127,7 @@ def update_measure_attributes(m, attrs, inplace=False):
 
 
 class PieceCounter(object):
-    attr_names = ['key', 'clef', 'time', 'divisions']
+    attr_names = ['divisions', 'key', 'time', 'clef']
 
     def __init__(self):
         self.cnt = 0
@@ -150,6 +150,7 @@ class PieceCounter(object):
 
         if is_initial_measure(m) and self._last_was_final:
             self.cnt += 1
+            update_measure_attributes(m, self.last_measure_attributes, inplace=True)
         self._last_was_final = is_final_measure_candidate(m)
 
 
@@ -166,7 +167,6 @@ def extract_piece(xml_string, number):
                 if pc.cnt != number:
                     node.remove(child)
                 else:
-                    update_measure_attributes(child, pc.last_measure_attributes, inplace=True)
                     piece_found = True
             else:
                 piece_found_child = process_node(child, piece_found)
