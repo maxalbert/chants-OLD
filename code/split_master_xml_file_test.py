@@ -50,12 +50,17 @@ def test_is_initial_measure():
 
 
 def make_measure_xml(number, bar_style):
-    return textwrap.dedent("""
-        <measure number='{number}'>
+    if bar_style is None:
+        bar_xml = ""
+    else:
+        assert isinstance(bar_style, str)
+        bar_xml = """
             <barline location='right'>
                 <bar-style>{bar_style}</bar-style>
-            </barline>
-        </measure>""".format(number=number, bar_style=bar_style))
+            </barline>\n""".format(bar_style=bar_style)
+
+    xml = "<measure number='{number}'>{bar_xml}</measure>".format(number=number, bar_xml=bar_xml)
+    return ET.fromstring(xml)
 
 
 def test_is_final_measure_candidate():
@@ -63,13 +68,13 @@ def test_is_final_measure_candidate():
     Check whether a measure is a candidate the final measure of a chant.
     This is the case iff it has a barline of type 'light-heavy'.
     """
-    m1 = ET.fromstring(make_measure_xml(4, 'light-heavy'))
-    m2 = ET.fromstring(make_measure_xml(3, 'light-light'))
-    m3 = ET.fromstring(make_measure_xml(15, 'dashed'))
-    m4 = ET.fromstring(make_measure_xml(11, 'none'))
-    m5 = ET.fromstring("<measure number='12'></measure>")
+    m1 = make_measure_xml(4, 'light-heavy')
+    m2 = make_measure_xml(3, 'light-light')
+    m3 = make_measure_xml(15, 'dashed')
+    m4 = make_measure_xml(11, 'none')
+    m5 = make_measure_xml(12, None)
     m6 = ET.fromstring("<measure number='9'><barline></barline></measure>")
-    m7 = ET.fromstring(make_measure_xml(1, 'light-heavy'))
+    m7 = make_measure_xml(1, 'light-heavy')
 
     assert is_final_measure_candidate(m1)
     assert not is_final_measure_candidate(m2)
@@ -93,11 +98,11 @@ def test_is_chant_boudary():
     the second measure is an initial measure.
 
     """
-    m1 = ET.fromstring("<measure number='1'></measure>")
-    m2 = ET.fromstring(make_measure_xml(8, 'light-heavy'))
-    m3 = ET.fromstring("<measure number='2'></measure>")
-    m4 = ET.fromstring(make_measure_xml(12, 'dashed'))
-    m5 = ET.fromstring(make_measure_xml(1, 'light-heavy'))
+    m1 = make_measure_xml(1, None)
+    m2 = make_measure_xml(8, 'light-heavy')
+    m3 = make_measure_xml(2, None)
+    m4 = make_measure_xml(12, 'dashed')
+    m5 = make_measure_xml(1, 'light-heavy')
 
     assert is_chant_boundary(m2, m1)
 
