@@ -122,3 +122,70 @@ def test_is_chant_boudary():
     # This does not raise the exception because `m1` is not a final
     # measure candidate, so the check doesn't even look at `m5`.
     assert not is_chant_boundary(m1, m5)
+
+
+def test_PieceCounter():
+    m1 = make_measure_xml(1, None)           # initial measure
+    m2 = make_measure_xml(4, None)           # middle
+    m3 = make_measure_xml(8, 'light-heavy')  # final
+
+    def check_consume(pc, m, number):
+        """
+        Consume the measure and check that afterwards the counter is
+        equal to 'number'.
+        """
+        pc.consume(m)
+        assert pc.cnt == number
+
+
+    # Initially the counter should be zero
+    pc = PieceCounter()
+    assert pc.cnt == 0
+
+    # Since we are at the beginning, consuming an initial measure
+    # should increase the counter.
+    check_consume(pc, m1, 1)
+
+    # However, consuming more initial measures should not increase the
+    # counter because the previous measure was not a final measure.
+    check_consume(pc, m1, 1)
+    check_consume(pc, m1, 1)
+
+    # Similarly, consuming a bunch of middle measures should not
+    # increase the counter.
+    for i in xrange(12):
+        check_consume(pc, m2, 1)
+
+    # If we consume a final measure that is not immediately followed
+    # by an initial measure the counter should not increase.
+    check_consume(pc, m3, 1)
+    check_consume(pc, m2, 1)
+    check_consume(pc, m1, 1)
+
+    # Only when we consume a final measure immediately followed by an
+    # initial measure should the counter increase.
+    check_consume(pc, m3, 1)
+    check_consume(pc, m1, 2)
+
+    # Let's try again, just for luck
+    for i in xrange(12):
+        check_consume(pc, m2, 2)
+    check_consume(pc, m3, 2)
+    check_consume(pc, m1, 3)
+
+    for i in xrange(8):
+        check_consume(pc, m2, 3)
+    check_consume(pc, m3, 3)
+    check_consume(pc, m1, 4)
+
+    # One more time with a fresh counter, but this time we consume
+    # some non-initial measures first.
+    #
+    # TODO: Currently this leaves the counter at 0. Is this the best option?!?
+    pc = PieceCounter()
+    assert pc.cnt == 0
+
+    check_consume(pc, m3, 0)
+    check_consume(pc, m2, 0)
+    check_consume(pc, m3, 0)
+    check_consume(pc, m1, 1)

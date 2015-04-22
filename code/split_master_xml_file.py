@@ -63,3 +63,15 @@ def is_chant_boundary(m1, m2):
 
     """
     return is_final_measure_candidate(m1) and is_initial_measure(m2)
+
+
+class PieceCounter(object):
+    def __init__(self):
+        self.cnt = 0
+        self._last_was_final = True
+
+    def consume(self, m):
+        check_xml_type(m, 'measure')
+        if is_initial_measure(m) and self._last_was_final:
+            self.cnt += 1
+        self._last_was_final = is_final_measure_candidate(m)
