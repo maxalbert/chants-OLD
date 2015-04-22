@@ -196,6 +196,19 @@ def test_get_measure_attribute():
 
 
 class TestPieceCounter():
+    def setup(self):
+        self.div_str_1 = "<divisions>768</divisions>"
+        self.div_str_2 = "<divisions>1024</divisions>"
+
+        self.key_str_1 = "<key><fifths>0</fifths><mode>major</mode></key>"
+        self.key_str_2 = "<key><fifths>-1</fifths><mode>major</mode></key>"
+
+        self.clef_str_1 = "<clef><sign>G</sign><line>2</line><clef-octave-change>-1</clef-octave-change></clef>"
+        self.clef_str_2 = "<clef><sign>G</sign><line>2</line></clef>"
+
+        self.time_str_1 = "<time><beats>15</beats><beat-type>4</beat-type></time>"
+        self.time_str_2 = "<time><beats>23</beats><beat-type>4</beat-type></time>"
+
     def check_consume(self, pc, m, number):
         """
         Consume the measure and check that afterwards the counter is
@@ -264,6 +277,59 @@ class TestPieceCounter():
         self.check_consume(pc, m2, 0)
         self.check_consume(pc, m3, 0)
         self.check_consume(pc, m1, 1)
+
+    def test_consuming_measures_updates_attributes(self):
+        attr1 = self.div_str_1 + self.key_str_1 + self.time_str_1
+        attr2 = self.clef_str_2 + self.div_str_2
+        attr3 = self.time_str_2
+
+        m1 = make_measure(5, None, extra_string=attr1)
+        m2 = make_measure(3, 'light-heavy', extra_string=attr2)
+        m3 = make_measure(8, None, extra_string=attr3)
+
+        def xml2str(attr_dict):
+            def to_str(value):
+                if value is None:
+                    return None
+                else:
+                    return ET.tostring(value)
+            return {key: to_str(value) for (key, value) in attr_dict.iteritems()}
+
+        def str2xml(attr_dict):
+            def to_xml(value):
+                if value is None:
+                    return None
+                else:
+                    return ET.fromstring(value)
+            return {key: to_xml(value) for (key, value) in attr_dict.iteritems()}
+
+
+        def assert_attributes_equal(attrs, attrs_expected):
+            assert xml2str(attrs) == xml2str(attrs_expected)
+
+        pc = PieceCounter()
+        assert_attributes_equal(pc.attributes, {'divisions': None, 'key': None, 'clef': None, 'time': None})
+
+        pc.consume(m1)
+        assert_attributes_equal(pc.attributes,
+                                str2xml({'divisions': self.div_str_1,
+                                         'key': self.key_str_1,
+                                         'clef': None,
+                                         'time': self.time_str_1}))
+
+        pc.consume(m2)
+        assert_attributes_equal(pc.attributes,
+                                str2xml({'divisions': self.div_str_2,
+                                         'key': self.key_str_1,
+                                         'clef': self.clef_str_2,
+                                         'time': self.time_str_1}))
+
+        pc.consume(m3)
+        assert_attributes_equal(pc.attributes,
+                                str2xml({'divisions': self.div_str_2,
+                                         'key': self.key_str_1,
+                                         'clef': self.clef_str_2,
+                                         'time': self.time_str_2}))
 
 
 def make_piece_xml(measure_strings):

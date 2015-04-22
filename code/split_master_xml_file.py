@@ -92,16 +92,26 @@ def get_measure_attribute(m, name):
 
 
 class PieceCounter(object):
+    attr_names = ['key', 'clef', 'time', 'divisions']
+
     def __init__(self):
         self.cnt = 0
         self._last_was_final = True
+        self.attributes = {name: None for name in self.attr_names}
+
+    def update_measure_attributes(self, m):
+        for name in self.attr_names:
+            try:
+                self.attributes[name] = get_measure_attribute(m, name)
+            except AttributeError:
+                pass
 
     def consume(self, m):
-        try:
-            check_xml_type(m, 'measure')
-        except TypeError:
+        if not is_xml_measure(m):
             # Non-measure XML elements are ignored
             return
+
+        self.update_measure_attributes(m)
 
         if is_initial_measure(m) and self._last_was_final:
             self.cnt += 1
