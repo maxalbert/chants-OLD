@@ -84,3 +84,36 @@ def test_is_final_measure_candidate():
     # decide later.
     with pytest.raises(FinalMeasureError):
         is_final_measure_candidate(m7)
+
+
+def test_is_chant_boudary():
+    """
+    Check whether a pair of measurs defines a chant boundary. This is
+    the case iff the first measure is a final-measure candidate and
+    the second measure is an initial measure.
+
+    """
+    m1 = ET.fromstring("<measure number='1'></measure>")
+    m2 = ET.fromstring(make_measure_xml(8, 'light-heavy'))
+    m3 = ET.fromstring("<measure number='2'></measure>")
+    m4 = ET.fromstring(make_measure_xml(12, 'dashed'))
+    m5 = ET.fromstring(make_measure_xml(1, 'light-heavy'))
+
+    assert is_chant_boundary(m2, m1)
+
+    assert not is_chant_boundary(m3, m1)
+    assert not is_chant_boundary(m4, m1)
+
+    assert not is_chant_boundary(m1, m2)
+    assert not is_chant_boundary(m1, m3)
+    assert not is_chant_boundary(m1, m4)
+
+    assert not is_chant_boundary(m2, m3)
+    assert not is_chant_boundary(m2, m4)
+
+    with pytest.raises(FinalMeasureError):
+        is_chant_boundary(m5, m1)
+
+    # This does not raise the exception because `m1` is not a final
+    # measure candidate, so the check doesn't even look at `m5`.
+    assert not is_chant_boundary(m1, m5)

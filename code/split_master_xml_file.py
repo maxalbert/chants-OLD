@@ -52,3 +52,14 @@ def is_final_measure_candidate(element):
                 return True
     except AttributeError:
         return False
+
+
+def is_chant_boundary(m1, m2):
+    """
+    Return `True` if the pair of measures defines a chant boundary and
+    `False` otherwise. This is the case iff the first measure is a
+    final-measure candidate and the second measure is an initial
+    measure.
+
+    """
+    return is_final_measure_candidate(m1) and is_initial_measure(m2)
