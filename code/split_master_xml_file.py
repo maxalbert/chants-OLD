@@ -1,6 +1,14 @@
 import xml.etree.ElementTree as ET
 
 
+class MeasureNumberError(Exception):
+    pass
+
+
+class FinalMeasureError(Exception):
+    pass
+
+
 def check_xml_type(element, xml_type):
     if not isinstance(element, ET.Element):
         raise TypeError("Not an XML element: '{}' (type: {})".format(element, type(element)))
@@ -9,18 +17,25 @@ def check_xml_type(element, xml_type):
         raise TypeError("XML Element is not of type '{}': {}".format(xml_type, element))
 
 
+def get_measure_number(element):
+    check_xml_type(element, 'measure')
+    attribs = element.attrib
+    try:
+        return int(attribs['number'])
+    except KeyError:
+        raise MeasureNumberError("Measure has no 'number' attribute: '{}'".format(element))
+
+
 def is_initial_measure(element):
     """
     Return `True` if the XML element is of type 'measure' and has the
     attribute "number='1'". Otherwise return `False`.
 
     """
-    check_xml_type(element, 'measure')
-
-    attribs = element.attrib
     try:
-        return attribs['number'] == '1'
-    except KeyError:
+        n = get_measure_number(element)
+        return n == 1
+    except MeasureNumberError:
         return False
 
 
@@ -30,6 +45,10 @@ def is_final_measure_candidate(element):
     try:
         barline = element.find('barline')
         barstyle = barline.find('bar-style')
-        return barstyle.text == 'light-heavy'
+        if barstyle.text == 'light-heavy':
+            if get_measure_number(element) == 1:
+                raise FinalMeasureError("Final measure candidate should not have measure number '1'. Aborting.")
+            else:
+                return True
     except AttributeError:
         return False
