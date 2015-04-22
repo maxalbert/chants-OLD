@@ -30,7 +30,7 @@ def is_xml_measure(element):
 def tidy_up_xml(xml_string):
     lines = xml_string.split('\n')
     lines_stripped = [l.strip() for l in lines]
-    lines_tidy = [re.sub('"', '\'', l) for l in lines_stripped]
+    lines_tidy = [re.sub('"', '\'', l) for l in lines_stripped if l != ""]
     res = '\n'.join(lines_tidy)
     return res.strip()
 

@@ -417,6 +417,7 @@ def test_tidy_up_xml():
         <score-partwise version='3.0'>
             <part id='P1'>
                 <measure number='1'><note>a</note></measure>
+
         <measure number='2'><note>b</note></measure>
           </part>
         <score-partwise>
