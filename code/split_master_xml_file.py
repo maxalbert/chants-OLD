@@ -71,7 +71,12 @@ class PieceCounter(object):
         self._last_was_final = True
 
     def consume(self, m):
-        check_xml_type(m, 'measure')
+        try:
+            check_xml_type(m, 'measure')
+        except TypeError:
+            # Non-measure XML elements are ignored
+            return
+
         if is_initial_measure(m) and self._last_was_final:
             self.cnt += 1
         self._last_was_final = is_final_measure_candidate(m)

@@ -141,6 +141,7 @@ def test_PieceCounter():
     m1 = make_measure(1, None)           # initial measure
     m2 = make_measure(4, None)           # middle
     m3 = make_measure(8, 'light-heavy')  # final
+    foo = ET.fromstring("<foo>bar</foo>")  # random element (should be ignored)
 
     def check_consume(pc, m, number):
         """
@@ -188,6 +189,7 @@ def test_PieceCounter():
 
     for i in xrange(8):
         check_consume(pc, m2, 3)
+        check_consume(pc, foo, 3)  # non-measure elements should be ignored
     check_consume(pc, m3, 3)
     check_consume(pc, m1, 4)
 
