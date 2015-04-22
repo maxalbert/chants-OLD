@@ -258,57 +258,30 @@ def test_tidy_up_xml():
 
 
 def test_extract_piece():
-    attr_string_1 = textwrap.dedent("""
-        <attributes>
-            <divisions>768</divisions>
+    div_str = "<divisions>768</divisions>"
+    key_str = textwrap.dedent("""
             <key>
                 <fifths>0</fifths>
                 <mode>major</mode>
             </key>
-            <time>
-                <beats>15</beats>
-                <beat-type>4</beat-type>
-            </time>
+        """)
+    clef_str = textwrap.dedent("""
             <clef>
                 <sign>G</sign>
                 <line>2</line>
                 <clef-octave-change>-1</clef-octave-change>
             </clef>
-        </attributes>
+        """)
+    time_str = textwrap.dedent("""
+            <time>
+                <beats>15</beats>
+                <beat-type>4</beat-type>
+            </time>
         """)
 
-    attr_string_2 = textwrap.dedent("""
-        <attributes>
-            <clef>
-                <sign>G</sign>
-                <line>2</line>
-                <clef-octave-change>-1</clef-octave-change>
-            </clef>
-            <time>
-                <beats>15</beats>
-                <beat-type>4</beat-type>
-            </time>
-        </attributes>
-        """)
-
-    attr_string_2_full = textwrap.dedent("""
-        <attributes>
-            <clef>
-                <sign>G</sign>
-                <line>2</line>
-                <clef-octave-change>-1</clef-octave-change>
-            </clef>
-            <time>
-                <beats>15</beats>
-                <beat-type>4</beat-type>
-            </time>
-            <divisions>768</divisions>
-            <key>
-                <fifths>0</fifths>
-                <mode>major</mode>
-            </key>
-        </attributes>
-        """)
+    attr_string_1 = div_str + key_str + time_str + clef_str
+    attr_string_2 = clef_str + time_str
+    attr_string_2_full = clef_str + time_str + div_str + key_str
 
     measures_piece_1 = [
         make_measure_xml(1, None, 'a', extra_string=attr_string_1),
