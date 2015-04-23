@@ -65,7 +65,7 @@ PartPOneVoiceOne =  \relative g {
     \time 31/4  c4 d4 b4 g4 a4 g4 g4 c4 d4 d4 ( e4 ) c4 d4 d4 c4 f4 e4 d4
     c4 d4 c4 ( b4 ) a4 c4 d4 d4 ( e4 ) g,4 a4 g4 g4 \break | % 18
     c4 d4 b4 g4 a4 g4 g4 c4 d4 d4 ( e4 ) c4 d4 d4 c4 f4 e4 d4 c4 d4 c4 (
-    b4 ) a4 c4 d4 -"The ms contains the word "est" here, but it seems to
+    b4 ) a4 c4 d4 -"The ms contains the word \"est\" here, but it seems to
     be a mistake; moreover, there is no note above it." d4 ( e4 ) g,4 a4
     \sustainOff g4 g4 \break | % 19
     \time 29/4  g'4 f4 e4 ( d4 ) c4 ( d4 ) e4 d4 c4 ( b4 ) a4 c4 d4 f4 e4

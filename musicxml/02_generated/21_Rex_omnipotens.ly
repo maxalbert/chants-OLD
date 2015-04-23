@@ -53,9 +53,9 @@ PartPOneVoiceOne =  \relative b {
     \time 16/4  c4 b4 a4 c4 g4 c4 b4 a4 c4 d4 d4 e4 d4 c4 d4 d4 \break | % 18
     \time 19/4  d4 e4 d4 c4 e4 f4 e4 d4 c4 e4 c4 e4 d4 f4 e4 d4 c4 d4 d4
     | % 19
-    d4 e4 d4 c4 e4 f4 e4 d4 c4 -"There is an "et" here in the
+    d4 e4 d4 c4 e4 f4 e4 d4 c4 -"There is an \"et\" here in the
     manuscript, but no note for it. In the reference text, there is no
-    "et". I have treated it as a mistake, as a result." \sustainOff e4 c4
+    \"et\". I have treated it as a mistake, as a result." \sustainOff e4 c4
     e4 d4 f4 e4 d4 c4 d4 d4 \break | \barNumberCheck #20
     \time 23/4  c4 a4 c4 b4 c4 a4 g4 a4 ( f4 \sustainOff ) f4 f4 a4 c4 b4
     a4 c4 g4 g4 a4 g4 f4 g4 g4 | % 21

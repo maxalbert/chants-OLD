@@ -91,7 +91,7 @@ PartPOneVoiceOne =  \relative g {
     \break | \barNumberCheck #30
     \time 16/4  | \barNumberCheck #30
     \[ g,4 -"The ficta recommended here is based on the assumption that
-    the opening "fulgens preclara" is not to be repeated in performance,
+    the opening \"fulgens preclara\" is not to be repeated in performance,
     but simply shown here to connect the fragments." -"Same opening,
     connecting the two fragments" ( b4 ) a4 ^"(Fulgens preclara:
     fragment appearing later in the manuscript, 269v)" b4 ( \slurDotted
