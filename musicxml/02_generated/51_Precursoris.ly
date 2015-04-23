@@ -27,12 +27,12 @@
         }
     }
 PartPOneVoiceOne =  \relative d {
-    s1*5184 \clef "treble_8" \key c \major \time 27/4 \pageBreak | % 1
-    d4*768 ^"51) Precursoris" ^"285v" -"Analecta Hymnica, vol. 8, no.
-    197, pp. 151-152." g4*768 ( g4*768 ) a4*768 g4*768 g4*768 f4*768 g4*768
-    g4*768 c4*768 ( b4*768 ) a4*768 g4*768 a4*768 b4*768 g4*768
-    \slurDotted a4*768 ( \slurSolid g4*768 f4*768 ) e4*768 d4*768 f4*768
-    a4*768 g4*768 f4*768 g4*768 g4*768 | % 2
+    \clef "treble_8" \key c \major \time 27/4 \pageBreak | % 1
+    d4 ^"51) Precursoris" ^"285v" -"Analecta Hymnica, vol. 8, no.
+    197, pp. 151-152." g4 ( g4 ) a4 g4 g4 f4 g4
+    g4 c4 ( b4 ) a4 g4 a4 b4 g4
+    \slurDotted a4 ( \slurSolid g4 f4 ) e4 d4 f4
+    a4 g4 f4 g4 g4 | % 2
     d4 g4 ( g4 ) a4 g4 g4 f4 g4 g4 c4 ( b4 ) a4 g4 a4 b4 g4 \slurDotted
     a4 ( \slurSolid g4 f4 ) e4 d4 f4 a4 g4 f4 g4 g4 \break | % 3
     \time 24/4  g4 a4 b4 g4 d4 f4 e4 d4 f4 g4 a4 f4 g4 a4 a4 g4 b4 g4 d'4
