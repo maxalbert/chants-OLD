@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
 import sys
+import re
 from glob import glob
 
 
@@ -11,9 +12,9 @@ def read_file_contents(filename):
 
 
 def tweak_key_none_to_major(s):
-    if '\key c \none' in s:
-        print('   Replacing:  "\key c \none" -> "\key c \major"')
-        s = re.sub('\\key c \\none', '\\key c \\major', s)
+    if re.search(r'\\key c \\none', s):
+        print(r'Replacing:  "\key c \none" -> "\key c \major"')
+        s = re.sub(r'\\key c \\none', r'\\key c \\major', s)
     return s
 
 
