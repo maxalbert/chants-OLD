@@ -28,6 +28,15 @@ def tweak_key_none_to_major(s):
 
 
 if __name__ == '__main__':
+    import textwrap
+    print(textwrap.dedent("""
+        ==========================================================================
+        Warning: The postprocessing patterns in this script are incomplete.
+                 It won't do any harm running this script, but some of the
+                 resulting .ly files will require further manual postprocessing.
+        ==========================================================================
+        """))
+
     try:
         glob_patterns = sys.argv[1:]
     except IndexError:
