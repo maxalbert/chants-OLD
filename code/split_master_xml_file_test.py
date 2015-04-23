@@ -252,6 +252,13 @@ def test_update_measure_attributes():
     assert_attribute_equal(m123, 'key', key_str)
     assert_attribute_equal(m123, 'time', time_str)  # should not be updated because it already exists in m12!
 
+    # Try updating with dict that contains None
+    m1_new = update_measure_attributes(m1, {'divisions': None, 'time': None})
+    assert_attribute_equal(m1_new, 'divisions', div_str)
+    assert_attribute_equal(m1_new, 'key', key_str)
+    assert_has_not_attribute(m1_new, 'clef')
+    assert_has_not_attribute(m1_new, 'time')
+
     # Try update in-place
     assert_attribute_equal(m1, 'divisions', div_str)
     assert_attribute_equal(m1, 'key', key_str)

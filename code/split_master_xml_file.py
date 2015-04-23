@@ -142,7 +142,8 @@ def update_measure_attributes(m, attrs, inplace=False):
         except MeasureAttributeError:
             try:
                 attr2 = attrs[name]
-                result.append(attr2)
+                if attr2 is not None:
+                    result.append(attr2)
             except KeyError:
                 continue
 
