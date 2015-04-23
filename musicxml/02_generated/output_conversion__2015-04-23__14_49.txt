@@ -322,37 +322,17 @@ Layout output to `04_Iubilemus_omnes.ps'...
 Converting to `./04_Iubilemus_omnes.pdf'...
 success: Compilation successfully completed
 05_Letabundus.xml
-Reading MusicXML from 05_Letabundus.xml ...
-Converting to LilyPond expressions...
-Cannot have a slur inside another slur
-  In: <slur type=start number=2>
-  In: <notations >
-  In: <note >
-  In: <measure number=1>
-  In: <part id=P1>
-  In: <score-partwise version=3.0>
-Cannot have two simultaneous (closing) slurs
-  In: <slur type=stop number=1>
-  In: <notations >
-  In: <note >
-  In: <measure number=1>
-  In: <part id=P1>
-  In: <score-partwise version=3.0>
-unknown mode none, expecting 'major' or 'minor' or a church mode!
-Output to `05_Letabundus.ly'
 GNU LilyPond 2.14.2
 Processing `05_Letabundus.ly'
 Parsing...
-05_Letabundus.ly:49:11: error: unknown escaped string: `\none'
-    \key c 
-           \none \time 26/4 g'4 g4 a4 f4 g4 \slurDotted f4 ( \slurSolid
-05_Letabundus.ly:49:11: error: syntax error, unexpected STRING, expecting SCM_IDENTIFIER
-    \key c 
-           \none \time 26/4 g'4 g4 a4 f4 g4 \slurDotted f4 ( \slurSolid
-05_Letabundus.ly:92:0: error: errors found, ignoring music expression
-
-\new Staff <<
-error: failed files: "05_Letabundus.ly"
+Interpreting music... [8]
+Preprocessing graphical objects...
+Finding the ideal number of pages...
+Fitting music on 1 page...
+Drawing systems...
+Layout output to `05_Letabundus.ps'...
+Converting to `./05_Letabundus.pdf'...
+success: Compilation successfully completed
 06_Hac_clara_die.xml
 Reading MusicXML from 06_Hac_clara_die.xml ...
 Converting to LilyPond expressions...
@@ -8186,189 +8166,61 @@ Layout output to `72_Salue_crux.ps'...
 Converting to `./72_Salue_crux.pdf'...
 success: Compilation successfully completed
 73_Iocundare_plebs.xml
-Reading MusicXML from 73_Iocundare_plebs.xml ...
-Converting to LilyPond expressions...
-Cannot have a slur inside another slur
-  In: <slur type=start number=2>
-  In: <notations >
-  In: <note >
-  In: <measure number=7>
-  In: <part id=P1>
-  In: <score-partwise version=3.0>
-Cannot have two simultaneous (closing) slurs
-  In: <slur type=stop number=1>
-  In: <notations >
-  In: <note >
-  In: <measure number=7>
-  In: <part id=P1>
-  In: <score-partwise version=3.0>
-Cannot have a slur inside another slur
-  In: <slur type=start number=2>
-  In: <notations >
-  In: <note >
-  In: <measure number=14>
-  In: <part id=P1>
-  In: <score-partwise version=3.0>
-Cannot have two simultaneous (closing) slurs
-  In: <slur type=stop number=1>
-  In: <notations >
-  In: <note >
-  In: <measure number=14>
-  In: <part id=P1>
-  In: <score-partwise version=3.0>
-unknown mode none, expecting 'major' or 'minor' or a church mode!
-Output to `73_Iocundare_plebs.ly'
 GNU LilyPond 2.14.2
 Processing `73_Iocundare_plebs.ly'
 Parsing...
-73_Iocundare_plebs.ly:94:11: error: unknown escaped string: `\none'
-    \key c 
-           \none d4 c4 d4 d4 ( e4 ) g4 f4 e4 d4 a'4 g4 a4 a4 ( b4 )
-73_Iocundare_plebs.ly:94:11: error: syntax error, unexpected STRING, expecting SCM_IDENTIFIER
-    \key c 
-           \none d4 c4 d4 d4 ( e4 ) g4 f4 e4 d4 a'4 g4 a4 a4 ( b4 )
-73_Iocundare_plebs.ly:160:0: error: errors found, ignoring music expression
-
-\new Staff <<
-error: failed files: "73_Iocundare_plebs.ly"
+Interpreting music... 
+73_Iocundare_plebs.ly:54:40: warning: cannot find start of piano pedal: `Sustain'
+    \time 44/4  a'4 c4 d4 d4 c4 ( c4 a4 
+                                        \sustainOff ) a4 ( b4 ) -\markup
+[8]
+73_Iocundare_plebs.ly:58:33: warning: cannot find start of piano pedal: `Sustain'
+    \time 41/4  a4 c4 d4 c4 ( b4 
+                                 \sustainOff ) -\markup { \natural } a4
+[16]
+Preprocessing graphical objects...
+Finding the ideal number of pages...
+Fitting music on 2 or 3 pages...
+Drawing systems...
+Layout output to `73_Iocundare_plebs.ps'...
+Converting to `./73_Iocundare_plebs.pdf'...
+success: Compilation successfully completed
 74_Laus_erumpat.xml
-Reading MusicXML from 74_Laus_erumpat.xml ...
-Converting to LilyPond expressions...
-unknown mode none, expecting 'major' or 'minor' or a church mode!
-Cannot have two simultaneous slurs
-  In: <slur type=start number=1 line-type=dotted>
-  In: <notations >
-  In: <note >
-  In: <measure number=3>
-  In: <part id=P1>
-  In: <score-partwise version=3.0>
-Encountered closing slur, but no slur is open
-  In: <slur type=stop number=2>
-  In: <notations >
-  In: <note >
-  In: <measure number=3>
-  In: <part id=P1>
-  In: <score-partwise version=3.0>
-Cannot have two simultaneous slurs
-  In: <slur type=start number=1 line-type=dotted>
-  In: <notations >
-  In: <note >
-  In: <measure number=4>
-  In: <part id=P1>
-  In: <score-partwise version=3.0>
-Encountered closing slur, but no slur is open
-  In: <slur type=stop number=2>
-  In: <notations >
-  In: <note >
-  In: <measure number=4>
-  In: <part id=P1>
-  In: <score-partwise version=3.0>
-Output to `74_Laus_erumpat.ly'
 GNU LilyPond 2.14.2
 Processing `74_Laus_erumpat.ly'
 Parsing...
-74_Laus_erumpat.ly:30:28: error: unknown escaped string: `\none'
-    \clef "treble_8" \key c 
-                            \none \time 25/4 \pageBreak | % 1
-74_Laus_erumpat.ly:30:28: error: syntax error, unexpected STRING, expecting SCM_IDENTIFIER
-    \clef "treble_8" \key c 
-                            \none \time 25/4 \pageBreak | % 1
-74_Laus_erumpat.ly:129:0: error: errors found, ignoring music expression
-
-\new Staff <<
-error: failed files: "74_Laus_erumpat.ly"
+Interpreting music... [8][16][24]
+Preprocessing graphical objects...
+Finding the ideal number of pages...
+Fitting music on 1 or 2 pages...
+Drawing systems...
+Layout output to `74_Laus_erumpat.ps'...
+Converting to `./74_Laus_erumpat.pdf'...
+success: Compilation successfully completed
 75_Uirgines_egregie.xml
-Reading MusicXML from 75_Uirgines_egregie.xml ...
-Converting to LilyPond expressions...
-unknown mode none, expecting 'major' or 'minor' or a church mode!
-Output to `75_Uirgines_egregie.ly'
 GNU LilyPond 2.14.2
 Processing `75_Uirgines_egregie.ly'
 Parsing...
-75_Uirgines_egregie.ly:30:28: error: unknown escaped string: `\none'
-    \clef "treble_8" \key c 
-                            \none \time 32/4 \pageBreak | % 1
-75_Uirgines_egregie.ly:30:28: error: syntax error, unexpected STRING, expecting SCM_IDENTIFIER
-    \clef "treble_8" \key c 
-                            \none \time 32/4 \pageBreak | % 1
-75_Uirgines_egregie.ly:88:0: error: errors found, ignoring music expression
-
-\new Staff <<
-error: failed files: "75_Uirgines_egregie.ly"
+Interpreting music... [8]
+Preprocessing graphical objects...
+Finding the ideal number of pages...
+Fitting music on 1 page...
+Drawing systems...
+Layout output to `75_Uirgines_egregie.ps'...
+Converting to `./75_Uirgines_egregie.pdf'...
+success: Compilation successfully completed
 76_Psallat_chorus_corde_mundo.xml
-Reading MusicXML from 76_Psallat_chorus_corde_mundo.xml ...
-Converting to LilyPond expressions...
-unknown mode none, expecting 'major' or 'minor' or a church mode!
-Cannot have a slur inside another slur
-  In: <slur type=start number=2>
-  In: <notations >
-  In: <note >
-  In: <measure number=2>
-  In: <part id=P1>
-  In: <score-partwise version=3.0>
-Cannot have two simultaneous (closing) slurs
-  In: <slur type=stop number=1>
-  In: <notations >
-  In: <note >
-  In: <measure number=2>
-  In: <part id=P1>
-  In: <score-partwise version=3.0>
-Cannot have a slur inside another slur
-  In: <slur type=start number=2>
-  In: <notations >
-  In: <note >
-  In: <measure number=15>
-  In: <part id=P1>
-  In: <score-partwise version=3.0>
-Cannot have two simultaneous (closing) slurs
-  In: <slur type=stop number=1>
-  In: <notations >
-  In: <note >
-  In: <measure number=15>
-  In: <part id=P1>
-  In: <score-partwise version=3.0>
-Cannot have a slur inside another slur
-  In: <slur type=start number=2>
-  In: <notations >
-  In: <note >
-  In: <measure number=16>
-  In: <part id=P1>
-  In: <score-partwise version=3.0>
-Cannot have two simultaneous (closing) slurs
-  In: <slur type=stop number=1>
-  In: <notations >
-  In: <note >
-  In: <measure number=16>
-  In: <part id=P1>
-  In: <score-partwise version=3.0>
-Cannot have two simultaneous slurs
-  In: <slur type=start number=1 line-type=dotted>
-  In: <notations >
-  In: <note >
-  In: <measure number=18>
-  In: <part id=P1>
-  In: <score-partwise version=3.0>
-Encountered closing slur, but no slur is open
-  In: <slur type=stop number=2>
-  In: <notations >
-  In: <note >
-  In: <measure number=18>
-  In: <part id=P1>
-  In: <score-partwise version=3.0>
-Output to `76_Psallat_chorus_corde_mundo.ly'
 GNU LilyPond 2.14.2
 Processing `76_Psallat_chorus_corde_mundo.ly'
 Parsing...
-76_Psallat_chorus_corde_mundo.ly:30:28: error: unknown escaped string: `\none'
-    \clef "treble_8" \key c 
-                            \none \time 27/4 \pageBreak | % 1
-76_Psallat_chorus_corde_mundo.ly:30:28: error: syntax error, unexpected STRING, expecting SCM_IDENTIFIER
-    \clef "treble_8" \key c 
-                            \none \time 27/4 \pageBreak | % 1
-76_Psallat_chorus_corde_mundo.ly:121:0: error: errors found, ignoring music expression
-
-\new Staff <<
-error: failed files: "76_Psallat_chorus_corde_mundo.ly"
+Interpreting music... [8][16]
+Preprocessing graphical objects...
+Finding the ideal number of pages...
+Fitting music on 1 or 2 pages...
+Drawing systems...
+Layout output to `76_Psallat_chorus_corde_mundo.ps'...
+Converting to `./76_Psallat_chorus_corde_mundo.pdf'...
+success: Compilation successfully completed
 77_Ecce_magno_sacerdoti.xml
 Reading MusicXML from 77_Ecce_magno_sacerdoti.xml ...
 Converting to LilyPond expressions...
