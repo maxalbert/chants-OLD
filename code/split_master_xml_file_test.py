@@ -278,7 +278,7 @@ class TestPieceCounter():
         self.time_str_1 = "<time><beats>15</beats><beat-type>4</beat-type></time>"
         self.time_str_2 = "<time><beats>23</beats><beat-type>4</beat-type></time>"
 
-    def check_consume(self, pc, m, number):
+    def _check_consume(self, pc, m, number):
         """
         Consume the measure and check that afterwards the counter is
         equal to 'number'.
@@ -298,40 +298,40 @@ class TestPieceCounter():
 
         # Since we are at the beginning, consuming an initial measure
         # should increase the counter.
-        self.check_consume(pc, m1, 1)
+        self._check_consume(pc, m1, 1)
 
         # However, consuming more initial measures should not increase the
         # counter because the previous measure was not a final measure.
-        self.check_consume(pc, m1, 1)
-        self.check_consume(pc, m1, 1)
+        self._check_consume(pc, m1, 1)
+        self._check_consume(pc, m1, 1)
 
         # Similarly, consuming a bunch of middle measures should not
         # increase the counter.
         for i in xrange(12):
-            self.check_consume(pc, m2, 1)
+            self._check_consume(pc, m2, 1)
 
         # If we consume a final measure that is not immediately followed
         # by an initial measure the counter should not increase.
-        self.check_consume(pc, m3, 1)
-        self.check_consume(pc, m2, 1)
-        self.check_consume(pc, m1, 1)
+        self._check_consume(pc, m3, 1)
+        self._check_consume(pc, m2, 1)
+        self._check_consume(pc, m1, 1)
 
         # Only when we consume a final measure immediately followed by an
         # initial measure should the counter increase.
-        self.check_consume(pc, m3, 1)
-        self.check_consume(pc, m1, 2)
+        self._check_consume(pc, m3, 1)
+        self._check_consume(pc, m1, 2)
 
         # Let's try again, just for luck
         for i in xrange(12):
-            self.check_consume(pc, m2, 2)
-        self.check_consume(pc, m3, 2)
-        self.check_consume(pc, m1, 3)
+            self._check_consume(pc, m2, 2)
+        self._check_consume(pc, m3, 2)
+        self._check_consume(pc, m1, 3)
 
         for i in xrange(8):
-            self.check_consume(pc, m2, 3)
-            self.check_consume(pc, foo, 3)  # non-measure elements should be ignored
-        self.check_consume(pc, m3, 3)
-        self.check_consume(pc, m1, 4)
+            self._check_consume(pc, m2, 3)
+            self._check_consume(pc, foo, 3)  # non-measure elements should be ignored
+        self._check_consume(pc, m3, 3)
+        self._check_consume(pc, m1, 4)
 
     def test_consuming_non_initial_measures_at_the_beginning_should_leave_counter_at_zero(self):
         m1 = make_measure(1, None)           # initial measure
@@ -342,10 +342,10 @@ class TestPieceCounter():
         pc = PieceCounter()
         assert pc.cnt == 0
 
-        self.check_consume(pc, m3, 0)
-        self.check_consume(pc, m2, 0)
-        self.check_consume(pc, m3, 0)
-        self.check_consume(pc, m1, 1)
+        self._check_consume(pc, m3, 0)
+        self._check_consume(pc, m2, 0)
+        self._check_consume(pc, m3, 0)
+        self._check_consume(pc, m1, 1)
 
     def test_consuming_measures_updates_attributes(self):
         attr1 = self.div_str_1 + self.key_str_1 + self.time_str_1
