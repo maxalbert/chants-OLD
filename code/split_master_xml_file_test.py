@@ -658,6 +658,10 @@ def test_extract_piece_from_string():
     xml_piece_1_and_2_extracted = extract_piece_from_string(xml_full, [1, 2])
     assert xml_strings_are_equivalent(xml_piece_1_and_2_expected, xml_piece_1_and_2_extracted)
 
+    # Check that passing 'None' as the list of piece numbers extracts all pieces
+    xml_piece_1_and_2_extracted_v2 = extract_piece_from_string(xml_full, None)
+    assert xml_piece_1_and_2_extracted == xml_piece_1_and_2_extracted_v2
+
 
 @pytest.mark.slow
 def test_stress_test_extract_piece_from_string():

@@ -213,8 +213,8 @@ class PieceCounter(object):
         unaltered copy of `m` is returned.
 
         """
-        if not isinstance(piece_numbers, list):
-            assert isinstance(piece_numbers, (NoneType, IntType))
+        if not isinstance(piece_numbers, (list, NoneType)):
+            assert isinstance(piece_numbers, IntType)
             piece_numbers = [piece_numbers]
 
         if not is_xml_measure(m):
@@ -226,12 +226,12 @@ class PieceCounter(object):
             print("[DDD] Found new piece: #{}".format(self.cnt))
             sys.stdout.flush()
 
-        if self.cnt not in piece_numbers:
-            res = None
-        else:
+        if piece_numbers is None or self.cnt in piece_numbers:
             res = copy.deepcopy(m)
             if is_initial_measure(m) and self._last_was_final:
                 res = update_measure_attributes(res, self.last_measure_attributes)
+        else:
+            res = None
 
         self._last_was_final = is_final_measure_candidate(m)
         self.update_last_measure_attributes(m)
