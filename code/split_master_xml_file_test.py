@@ -219,7 +219,7 @@ def test_update_measure_attributes():
         assert ET.tostring(a) == attr_string
 
     def assert_has_not_attribute(m, name):
-        with pytest.raises(AttributeError):
+        with pytest.raises(MeasureAttributeError):
             get_measure_attribute(m, name)
 
     m01 = update_measure_attributes(m0, get_measure_attributes(m1))

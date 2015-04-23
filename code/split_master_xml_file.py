@@ -7,6 +7,10 @@ class MeasureNumberError(Exception):
     pass
 
 
+class MeasureAttributeError(Exception):
+    pass
+
+
 class FinalMeasureError(Exception):
     pass
 
@@ -106,7 +110,7 @@ def get_measure_attribute(m, name):
     check_xml_type(m, 'measure')
     attr = m.find(name)
     if attr is None:
-        raise AttributeError("Measure has no attribute '{}'".format(name))
+        raise MeasureAttributeError("Measure has no attribute '{}'".format(name))
     return attr
 
 
@@ -115,7 +119,7 @@ def get_measure_attributes(m):
     for name in PieceCounter.attr_names:
         try:
             res[name] = get_measure_attribute(m, name)
-        except AttributeError:
+        except MeasureAttributeError:
             pass
             #res[name] = None
     return res
@@ -135,7 +139,7 @@ def update_measure_attributes(m, attrs, inplace=False):
     for name in PieceCounter.attr_names:
         try:
             attr1 = get_measure_attribute(result, name)
-        except AttributeError:
+        except MeasureAttributeError:
             try:
                 attr2 = attrs[name]
                 result.append(attr2)
