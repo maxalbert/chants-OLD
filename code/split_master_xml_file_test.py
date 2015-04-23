@@ -4,7 +4,7 @@ import xml.etree.ElementTree as ET
 from split_master_xml_file import *
 
 
-def make_measure_xml(number, bar_style, note=None, extra_string=""):
+def make_measure_xml(number, bar_style, note=None, attributes=None):
     if bar_style is None:
         bar_xml = ""
     else:
@@ -20,14 +20,23 @@ def make_measure_xml(number, bar_style, note=None, extra_string=""):
         assert isinstance(note, str)
         note_xml = "<note>{}</note>".format(note)
 
-    xml = "<measure number='{number}'>{note_xml}{bar_xml}{extra_string}</measure>".format(
-        number=number, note_xml=note_xml, bar_xml=bar_xml, extra_string=extra_string)
+    if attributes is None:
+        attr_string = ""
+    else:
+        assert isinstance(attributes, str)
+        attr_string = """
+            <attributes>
+                {}
+            </attributes>""".format(attributes)
+
+    xml = "<measure number='{number}'>{note_xml}{bar_xml}{attr_string}</measure>".format(
+        number=number, note_xml=note_xml, bar_xml=bar_xml, attr_string=attr_string)
 
     return xml
 
 
-def make_measure(number, bar_style, note=None, extra_string=""):
-    xml = make_measure_xml(number, bar_style, note=note, extra_string=extra_string)
+def make_measure(number, bar_style, note=None, attributes=None):
+    xml = make_measure_xml(number, bar_style, note=note, attributes=attributes)
     return ET.fromstring(xml)
 
 
@@ -163,14 +172,14 @@ def test_get_measure_attribute():
     attrs2 = clef_str + key_str + div_str
     attrs3 = time_str
 
-    m1 = make_measure(4, None, extra_string=attrs1)
-    m2 = make_measure(2, None, extra_string=attrs2)
-    m3 = make_measure(9, None, extra_string=attrs3)
+    m1 = make_measure(4, None, attributes=attrs1)
+    m2 = make_measure(2, None, attributes=attrs2)
+    m3 = make_measure(9, None, attributes=attrs3)
     m4 = make_measure(9, None)
 
     def assert_attribute_equal(m, name, attr_string):
         a = get_measure_attribute(m, name)
-        assert ET.tostring(a) == attr_string
+        assert ET.tostring(a).strip() == attr_string.strip()
 
     assert_attribute_equal(m1, 'divisions', div_str)
     assert_attribute_equal(m1, 'clef', clef_str)
@@ -199,7 +208,7 @@ def test_get_measure_attribute():
 
 def assert_attribute_equal(m, name, attr_string):
     a = get_measure_attribute(m, name)
-    assert ET.tostring(a) == attr_string
+    assert ET.tostring(a).strip() == attr_string.strip()
 
 
 def assert_has_not_attribute(m, name):
@@ -220,9 +229,9 @@ def test_update_measure_attributes():
     attrs3 = time_str_2
 
     m0 = make_measure(4, None)
-    m1 = make_measure(3, None, extra_string=attrs1)
-    m2 = make_measure(2, None, extra_string=attrs2)
-    m3 = make_measure(9, None, extra_string=attrs3)
+    m1 = make_measure(3, None, attributes=attrs1)
+    m2 = make_measure(2, None, attributes=attrs2)
+    m3 = make_measure(9, None, attributes=attrs3)
 
     m01 = update_measure_attributes(m0, get_measure_attributes(m1))
     assert_attribute_equal(m01, 'divisions', div_str)
@@ -302,9 +311,9 @@ class TestPieceCounter():
 
         div_str = "<divisions>768</divisions>"
         key_str = "<key><fifths>0</fifths><mode>major</mode></key>"
-        m1 = make_measure(3, None, extra_string=div_str)
-        m2 = make_measure(5, 'light-heavy', extra_string=key_str)
-        m3 = make_measure(1, None, extra_string=key_str)
+        m1 = make_measure(3, None, attributes=div_str)
+        m2 = make_measure(5, 'light-heavy', attributes=key_str)
+        m3 = make_measure(1, None, attributes=key_str)
         foo = ET.fromstring("<foo></foo>")
 
         res1 = pc.consume(m1, piece_numbers=3)
@@ -402,16 +411,16 @@ class TestPieceCounter():
         attr2 = self.clef_str_2 + self.div_str_2
         attr3 = self.time_str_2
 
-        m1 = make_measure(5, None, extra_string=attr1)
-        m2 = make_measure(3, 'light-heavy', extra_string=attr2)
-        m3 = make_measure(8, None, extra_string=attr3)
+        m1 = make_measure(5, None, attributes=attr1)
+        m2 = make_measure(3, 'light-heavy', attributes=attr2)
+        m3 = make_measure(8, None, attributes=attr3)
 
         def xml2str(attr_dict):
             def to_str(value):
                 if value is None:
                     return None
                 else:
-                    return ET.tostring(value)
+                    return ET.tostring(value).strip()
             return {key: to_str(value) for (key, value) in attr_dict.iteritems()}
 
         def str2xml(attr_dict):
@@ -598,7 +607,7 @@ def test_extract_piece_from_string():
     attr_string_2_full = clef_str + time_str + div_str + key_str
 
     measures_piece_1 = [
-        make_measure_xml(1, None, 'a', extra_string=attr_string_1),
+        make_measure_xml(1, None, 'a', attributes=attr_string_1),
         make_measure_xml(2, None, 'b'),
         make_measure_xml(5, None, 'c'),
         make_measure_xml(1, None, 'd'),
@@ -607,8 +616,8 @@ def test_extract_piece_from_string():
         make_measure_xml(8, 'light-heavy', 'g'),
         ]
 
-    piece_2_first_measure = make_measure_xml(1, None, 'h', extra_string=attr_string_2)
-    piece_2_first_measure_full = make_measure_xml(1, None, 'h', extra_string=attr_string_2_full)
+    piece_2_first_measure = make_measure_xml(1, None, 'h', attributes=attr_string_2)
+    piece_2_first_measure_full = make_measure_xml(1, None, 'h', attributes=attr_string_2_full)
 
     measures_piece_2 = [
         piece_2_first_measure,

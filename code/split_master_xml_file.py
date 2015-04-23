@@ -1,3 +1,4 @@
+from types import NoneType, IntType
 import xml.etree.ElementTree as ET
 import copy
 import sys
@@ -109,10 +110,27 @@ def is_chant_boundary(m1, m2):
 
 def get_measure_attribute(m, name):
     check_xml_type(m, 'measure')
-    attr = m.find(name)
+    attributes = m.find('attributes')
+    if attributes is None:
+        raise MeasureAttributeError("Measure has no attribute '{}'".format(name))
+    attr = attributes.find(name)
     if attr is None:
         raise MeasureAttributeError("Measure has no attribute '{}'".format(name))
     return attr
+
+
+def set_measure_attribute(m, name, value):
+    assert isinstance(value, ET.Element)
+    check_xml_type(m, 'measure')
+    attributes = m.find('attributes')
+    if attributes is None:
+        attributes = ET.fromstring("<attributes></attributes>")
+        m.append(attributes)
+
+    attr = attributes.find(name)
+    if attr is not None:
+        attributes.remove(attr)
+    attributes.append(value)
 
 
 def get_measure_attributes(m):
@@ -144,7 +162,7 @@ def update_measure_attributes(m, attrs, inplace=False):
             try:
                 attr2 = attrs[name]
                 if attr2 is not None:
-                    result.append(attr2)
+                    set_measure_attribute(result, name, attr2)
             except KeyError:
                 continue
 
