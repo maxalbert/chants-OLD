@@ -86,7 +86,7 @@ PartPOneVoiceOne =  \relative e {
 
 PartPOneVoiceOneLyricsOne =  \lyricmode { Ro -- "ma " __ pe -- tro glo
     -- ri -- e -- tur ro -- ma pau -- lum ue -- ne -- "re " -- tur pa --
-    ri re -- ue -- ren -- ti -- .a. Im -- mo to -- ta io -- cun -- "de "
+    ri re -- ue -- ren -- ti -- a. Im -- mo to -- ta io -- cun -- "de "
     -- \skip4 tur et io -- cun -- dis oc -- cu -- pe -- tur lau -- di --
     bus ec -- cle -- si -- a. Hii sunt e -- ius fun -- "da " -- men --
     ta fun -- da -- to -- res ful -- ci -- men -- ta ba -- "ses " __ e
