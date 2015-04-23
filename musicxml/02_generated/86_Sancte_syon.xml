@@ -1,0 +1,6771 @@
+<score-partwise version="3.0">
+	<movement-title>86) Sancte syon</movement-title><identification>
+		<rights>Copyright &#169; </rights><encoding>
+			<software>Sibelius 6.2</software><software>Dolet 6.4 for Sibelius</software><encoding-date>2015-04-22</encoding-date><supports element="accidental" type="no" /><supports element="transpose" type="no" /><supports attribute="new-page" element="print" type="yes" value="yes" /><supports attribute="new-system" element="print" type="yes" value="yes" /></encoding></identification><defaults>
+		<scaling>
+			<millimeters>4.2</millimeters><tenths>40</tenths></scaling><page-layout>
+			<page-height>2661</page-height><page-width>2056</page-width><page-margins type="odd">
+				<left-margin>142.8571</left-margin><right-margin>142.8571</right-margin><top-margin>190.4762</top-margin><bottom-margin>142.8571</bottom-margin></page-margins><page-margins type="even">
+				<left-margin>142.8571</left-margin><right-margin>142.8571</right-margin><top-margin>190.4762</top-margin><bottom-margin>142.8571</bottom-margin></page-margins></page-layout><system-layout>
+			<system-margins>
+				<left-margin>21.875</left-margin><right-margin>0</right-margin></system-margins><system-distance>200</system-distance><top-system-distance>121.5625</top-system-distance></system-layout><appearance>
+			<line-width type="beam">5</line-width><line-width type="heavy barline">5</line-width><line-width type="leger">1.5625</line-width><line-width type="light barline">1.5625</line-width><line-width type="slur middle">2.1875</line-width><line-width type="slur tip">0.625</line-width><line-width type="staff">0.9375</line-width><line-width type="stem">0.9375</line-width><line-width type="tie middle">2.1875</line-width><line-width type="tie tip">0.625</line-width><note-size type="grace">60</note-size><note-size type="cue">75</note-size></appearance><music-font font-family="Opus,music" /><word-font font-family="Times New Roman" /></defaults><part-list>
+		<score-part id="P1">
+			<part-name print-object="no">[Tenor]</part-name><score-instrument id="P1-I1">
+				<instrument-name>Tenor</instrument-name><instrument-abbreviation>T.</instrument-abbreviation><instrument-sound>voice.tenor</instrument-sound><ensemble /></score-instrument><midi-instrument id="P1-I1">
+				<volume>79</volume><pan>32</pan></midi-instrument></score-part></part-list><part id="P1">
+		<measure number="1">
+			<print new-page="yes" />
+			<attributes>
+				<time>
+					<beats>23</beats>
+					<beat-type>4</beat-type>
+				</time>
+			<divisions>768</divisions>
+				<key>
+					<fifths>0</fifths>
+					<mode>major</mode>
+				</key>
+				<clef>
+					<sign>G</sign>
+					<line>2</line>
+					<clef-octave-change>-1</clef-octave-change>
+				</clef>
+			</attributes>
+			<direction placement="above">
+				<direction-type>
+					<words>86) Sancte syon</words>
+				</direction-type>
+			</direction>
+			<direction placement="above">
+				<direction-type>
+					<words>307r</words>
+				</direction-type>
+			</direction>
+			<direction>
+				<direction-type>
+					<words default-y="40" relative-x="-6">Analecta Hymnica, vol. 55, no. 33, pp. 40-41.</words>
+				</direction-type>
+			</direction>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>Sanc</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>A</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="2" type="start" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>F</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type size="cue">quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+					<slur number="2" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>F</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur line-type="dotted" number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>te</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>E</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+			</note>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>F</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>sy</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>E</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+			</note>
+			<note>
+				<pitch>
+					<step>F</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>on</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>ad</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>A</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>B</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>sunt</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>en</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>A</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type size="cue">quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>B</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur line-type="dotted" number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>ce</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>A</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+			</note>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+			</note>
+			<note>
+				<pitch>
+					<step>F</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>A</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>ni</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>a.</text>
+				</lyric>
+			</note>
+		</measure>
+
+		<measure number="2">
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>Des</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>A</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="2" type="start" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type size="cue">quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+					<slur number="2" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>F</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur line-type="dotted" number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>pon</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>E</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+			</note>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>F</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>sa</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>E</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+			</note>
+			<note>
+				<pitch>
+					<step>F</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>tur</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>pre</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>A</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>B</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>sens</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>ec</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>A</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type size="cue">quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>B</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur line-type="dotted" number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>cle</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>A</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+			</note>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+			</note>
+			<note>
+				<pitch>
+					<step>F</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>A</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>si</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>a.</text>
+				</lyric>
+			</note>
+		</measure>
+
+		<measure number="3">
+			<print new-system="yes" />
+			<attributes>
+				<time>
+					<beats>17</beats>
+					<beat-type>4</beat-type>
+				</time>
+			</attributes>
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>single</syllabic>
+					<text>Stans</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>A</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>a</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>B</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>mic</text>
+				</lyric>
+			</note>
+			<direction>
+				<direction-type>
+					<pedal default-y="10" line="no" relative-x="-2" type="stop" />
+				</direction-type>
+			</direction>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>ta</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>A</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>uir</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>F</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type size="cue">quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>F</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur line-type="dotted" number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>tu</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>E</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+			</note>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>F</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>tum</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>A</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>glo</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>A</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur line-type="dotted" number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>ri</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+			</note>
+			<note>
+				<pitch>
+					<step>F</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+			</note>
+			<note>
+				<pitch>
+					<step>E</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+			</note>
+			<note>
+				<pitch>
+					<step>F</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>a.</text>
+				</lyric>
+			</note>
+		</measure>
+
+		<measure number="4">
+			<attributes>
+				<time>
+					<beats>18</beats>
+					<beat-type>4</beat-type>
+				</time>
+			</attributes>
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>Pas</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>A</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>sim</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>B</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>so</text>
+					<extend />
+				</lyric>
+			</note>
+			<direction>
+				<direction-type>
+					<pedal default-y="10" line="no" relative-x="-4" type="stop" />
+				</direction-type>
+			</direction>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type size="cue">quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>nant</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>A</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>or</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>F</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type size="cue">quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>F</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur line-type="dotted" number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>ga</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>E</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+			</note>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>F</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>na</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>A</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>dul</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>A</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur line-type="dotted" number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>ci</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+			</note>
+			<note>
+				<pitch>
+					<step>F</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+			</note>
+			<note>
+				<pitch>
+					<step>E</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+			</note>
+			<note>
+				<pitch>
+					<step>F</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>a.</text>
+				</lyric>
+			</note>
+		</measure>
+
+		<measure number="5">
+			<print new-system="yes" />
+			<attributes>
+				<time>
+					<beats>12</beats>
+					<beat-type>4</beat-type>
+				</time>
+			</attributes>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>Ro</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>A</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>rant</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>F</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>ce</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>li</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>A</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>mi</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>B</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>se</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>ri</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>B</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>cor</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur line-type="dotted" number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>di</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>B</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+			</note>
+			<note>
+				<pitch>
+					<step>A</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<direction>
+				<direction-type>
+					
+					<other-direction default-y="10" relative-x="-11">Vertical line</other-direction>
+				</direction-type>
+				<offset>765</offset>
+			</direction>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>a.</text>
+				</lyric>
+			</note>
+		</measure>
+
+		<measure number="6">
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>Plu</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>A</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>unt</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>F</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>nu</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>bes.</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>A</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>stil</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>B</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>lat</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>iu</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>B</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>sti</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur line-type="dotted" number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>ci</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>B</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+			</note>
+			<note>
+				<pitch>
+					<step>A</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>a.</text>
+				</lyric>
+			</note>
+		</measure>
+
+		<measure number="7">
+			<print new-system="yes" />
+			<attributes>
+				<time>
+					<beats>17</beats>
+					<beat-type>4</beat-type>
+				</time>
+			</attributes>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>Spon</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="2" type="start" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>A</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+					<slur number="2" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>F</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>sus</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>A</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>a</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>dest</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>na</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>B</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur line-type="dotted" number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>tus</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>A</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+			</note>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>single</syllabic>
+					<text>ex</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>A</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>F</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>ma</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>A</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>ri</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>B</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+			</note>
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>a.</text>
+				</lyric>
+			</note>
+		</measure>
+
+		<measure number="8">
+			<attributes>
+				<time>
+					<beats>16</beats>
+					<beat-type>4</beat-type>
+				</time>
+			</attributes>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>Sa</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>A</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>F</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>nans</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>A</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>mun</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>dum</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>in</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>B</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur line-type="dotted" number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>dul</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>A</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+			</note>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>ta</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>A</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>F</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>ue</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>A</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>ni</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>B</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+			</note>
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>a.</text>
+				</lyric>
+			</note>
+		</measure>
+
+		<measure number="9">
+			<print new-system="yes" />
+			<attributes>
+				<time>
+					<beats>12</beats>
+					<beat-type>4</beat-type>
+				</time>
+			</attributes>
+			<note>
+				<pitch>
+					<step>B</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>Jun</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>git</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>si</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>bi</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>E</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>Chri</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>stus</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>ec</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>B</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>cle</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur line-type="dotted" number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>si</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>B</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+			</note>
+			<note>
+				<pitch>
+					<step>A</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>am.</text>
+				</lyric>
+			</note>
+		</measure>
+
+		<measure number="10">
+			<note>
+				<pitch>
+					<step>B</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>Se</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>pti</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>for</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>mem</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>E</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>single</syllabic>
+					<text>dat</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>e</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>i</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>B</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>gra</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur line-type="dotted" number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>ti</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>B</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+			</note>
+			<note>
+				<pitch>
+					<step>A</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>am.</text>
+				</lyric>
+			</note>
+		</measure>
+
+		<measure number="11">
+			<print new-system="yes" />
+			<attributes>
+				<time>
+					<beats>15</beats>
+					<beat-type>4</beat-type>
+				</time>
+			</attributes>
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>Sa</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>A</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>cra</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>B</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>men</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>ta</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>fi</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>B</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>A</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>unt</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>A</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>pa</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>F</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>scha</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>E</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>F</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>li</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>a.</text>
+				</lyric>
+			</note>
+		</measure>
+
+		<measure number="12">
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>Pro</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>A</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>po</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>B</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>nun</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>tur</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>ui</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>B</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>A</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>te</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>A</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>ci</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>F</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>ba</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>E</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>F</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>ri</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>a.</text>
+				</lyric>
+			</note>
+		</measure>
+
+		<measure number="13">
+			<print new-system="yes" />
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>single</syllabic>
+					<text>Ad</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>single</syllabic>
+					<text>has</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>E</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<direction>
+				<direction-type>
+					<words default-y="-110" relative-x="-6">(agni)</words>
+				</direction-type>
+			</direction>
+			<note>
+				<pitch>
+					<step>F</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>an</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>E</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>ni</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+			</note>
+			<note>
+				<pitch>
+					<step>E</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>ce</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>le</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>E</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>F</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>stis</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>E</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>nup</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type size="cue">quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>E</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>ti</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>as.</text>
+				</lyric>
+			</note>
+		</measure>
+
+		<measure number="14">
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>Ue</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>cat</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>E</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>F</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>ser</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>E</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>uos</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+			</note>
+			<note>
+				<pitch>
+					<step>E</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>pa</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>ter</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>E</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>F</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>fa</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>E</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>mi</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type size="cue">quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>E</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>li</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>as.</text>
+				</lyric>
+			</note>
+		</measure>
+
+		<measure number="15">
+			<print new-page="yes" />
+			<attributes>
+				<time>
+					<beats>17</beats>
+					<beat-type>4</beat-type>
+				</time>
+			</attributes>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>A</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>F</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur line-type="dotted" number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>dest</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>E</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+			</note>
+			<direction>
+				<direction-type>
+					<words default-y="72" relative-x="-15">Such a great little moment: is this a C-phrase or a D-phrase?  It ends on D, but everything else says "C", especially the figure immediately preceding the final D!
+Do we hear the D as final?</words>
+				</direction-type>
+			</direction>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>E</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>a</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>F</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>bel.</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>E</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>single</syllabic>
+					<text>fert</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>in</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>no</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>B</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>cen</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur line-type="dotted" number="1" type="start" />
+					<slur number="2" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>ti</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>B</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+			</note>
+			<note>
+				<pitch>
+					<step>A</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+			</note>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="2" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>am.</text>
+				</lyric>
+			</note>
+		</measure>
+
+		<measure number="16">
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>In</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>F</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur line-type="dotted" number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>trat</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>E</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+			</note>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>E</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>no</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>F</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>e</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>E</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>por</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>tans</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>iu</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>B</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>sti</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur line-type="dotted" number="1" type="start" />
+					<slur number="2" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>ci</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>B</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+			</note>
+			<note>
+				<pitch>
+					<step>A</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+			</note>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="2" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>am.</text>
+				</lyric>
+			</note>
+		</measure>
+
+		<measure number="17">
+			<print new-system="yes" />
+			<attributes>
+				<time>
+					<beats>12</beats>
+					<beat-type>4</beat-type>
+				</time>
+			</attributes>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>Mel</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>F</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur line-type="dotted" number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>chi</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>E</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+			</note>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>se</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>dech</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>E</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>single</syllabic>
+					<text>pro</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>F</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>sa</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>cer</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>F</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>do</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>E</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>ti</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>o.</text>
+				</lyric>
+			</note>
+		</measure>
+
+		<measure number="18">
+			<attributes>
+				<time>
+					<beats>13</beats>
+					<beat-type>4</beat-type>
+				</time>
+			</attributes>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>Be</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>F</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>ne</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>E</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>di</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>cens</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>se</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>det</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>B</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>single</syllabic>
+					<text>in</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="2" type="start" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>B</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type size="cue">quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+					<slur number="2" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>A</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>me</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>di</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>o.</text>
+				</lyric>
+			</note>
+		</measure>
+
+		<measure number="19">
+			<attributes>
+				<time>
+					<beats>12</beats>
+					<beat-type>4</beat-type>
+				</time>
+			</attributes>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>single</syllabic>
+					<text>Hic</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>F</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur line-type="dotted" number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>a</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>E</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+			</note>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>bra</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>he</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>E</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>fi</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>F</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>de</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>i</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>F</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>ue</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>E</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>ri</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>tas.</text>
+				</lyric>
+			</note>
+		</measure>
+
+		<measure number="20">
+			<attributes>
+				<time>
+					<beats>13</beats>
+					<beat-type>4</beat-type>
+				</time>
+			</attributes>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>single</syllabic>
+					<text>Spes</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>F</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>y</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>E</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>sa</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>ac</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>single</syllabic>
+					<text>et</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>ia</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>B</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>cob</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="2" type="start" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>B</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type size="cue">quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+					<slur number="2" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>A</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>ca</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>ri</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>tas.</text>
+				</lyric>
+			</note>
+		</measure>
+
+		<measure number="21">
+			<print new-system="yes" />
+			<attributes>
+				<time>
+					<beats>16</beats>
+					<beat-type>4</beat-type>
+				</time>
+			</attributes>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>single</syllabic>
+					<text>Stat</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="2" type="start" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>E</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+					<slur number="2" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>mo</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>A</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>y</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>ses</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>cor</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>F</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>nu</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>E</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>ta</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+			</note>
+			<note>
+				<pitch>
+					<step>E</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>fa</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>ci</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>E</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>e.</text>
+				</lyric>
+			</note>
+		</measure>
+
+		<measure number="22">
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>So</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="2" type="start" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>E</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+					<slur number="2" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>lem</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>A</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>te</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>nens</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>tri</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>F</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>um</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>E</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>phat</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+			</note>
+			<note>
+				<pitch>
+					<step>E</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>io</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>su</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>E</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>e.</text>
+				</lyric>
+			</note>
+		</measure>
+
+		<measure number="23">
+			<print new-system="yes" />
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>Pu</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>er</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>E</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur line-type="dotted" number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>da</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+			</note>
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>uid</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>tru</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>B</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>A</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>ci</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>B</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>dat</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>B</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>A</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>go</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>A</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>li</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>am.</text>
+				</lyric>
+			</note>
+		</measure>
+
+		<measure number="24">
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>single</syllabic>
+					<text>Rex</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>psal</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>E</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur line-type="dotted" number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>mo</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+			</note>
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>rum</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>pan</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>B</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>A</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>git</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>B</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>me</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>B</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>A</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>lo</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>A</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>di</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>am.</text>
+				</lyric>
+			</note>
+		</measure>
+
+		<measure number="25">
+			<print new-system="yes" />
+			<attributes>
+				<time>
+					<beats>19</beats>
+					<beat-type>4</beat-type>
+				</time>
+			</attributes>
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>Si</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>mul</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>E</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>F</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>a</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>F</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur line-type="dotted" number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>stant</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>E</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+			</note>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>F</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur line-type="dotted" number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>single</syllabic>
+					<text>lex</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>E</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+			</note>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>single</syllabic>
+					<text>et</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>pro</text>
+					<extend />
+				</lyric>
+			</note>
+			<direction>
+				<direction-type>
+					<pedal default-y="10" line="no" relative-x="-2" type="stop" />
+				</direction-type>
+			</direction>
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>B</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur line-type="dotted" number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>phe</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>A</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+			</note>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>A</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>ti</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>a.</text>
+				</lyric>
+			</note>
+		</measure>
+
+		<measure number="26">
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>Con</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>fir</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>E</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>F</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>ma</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>F</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur line-type="dotted" number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>ta</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>E</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+			</note>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>F</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur line-type="dotted" number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>single</syllabic>
+					<text>per</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>E</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+			</note>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>eu</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>uan</text>
+					<extend />
+				</lyric>
+			</note>
+			<direction>
+				<direction-type>
+					<pedal default-y="10" line="no" relative-x="-4" type="stop" />
+				</direction-type>
+			</direction>
+			<note>
+				<pitch>
+					<step>B</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type size="cue">quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>B</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur line-type="dotted" number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>ge</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>A</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+			</note>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>A</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>li</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>a.</text>
+				</lyric>
+			</note>
+		</measure>
+
+		<measure number="27">
+			<print new-system="yes" />
+			<attributes>
+				<time>
+					<beats>20</beats>
+					<beat-type>4</beat-type>
+				</time>
+			</attributes>
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>Fe</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>B</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>A</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>de</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>ran</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>tur</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>E</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>ter</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>B</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>A</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>ris</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>A</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur line-type="dotted" number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>ce</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+			</note>
+			<note>
+				<pitch>
+					<step>F</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>le</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>B</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+			</note>
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>A</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>sti</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>a.</text>
+				</lyric>
+			</note>
+		</measure>
+
+		<measure number="28">
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>Com</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>B</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>A</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>plet</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>de</text>
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>D</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>us</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>E</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>om</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>B</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>A</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>ni</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>A</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur line-type="dotted" number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>bus</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+			</note>
+			<note>
+				<pitch>
+					<step>F</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>om</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>B</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+			</note>
+			<note>
+				<pitch>
+					<step>C</step>
+					<octave>4</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>A</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>middle</syllabic>
+					<text>ni</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>a.</text>
+				</lyric>
+			</note>
+		</measure>
+
+		<measure number="29">
+			<print new-system="yes" />
+			<attributes>
+				<time>
+					<beats>5</beats>
+					<beat-type>4</beat-type>
+				</time>
+			</attributes>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>begin</syllabic>
+					<text>A</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>A</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+			</note>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<note>
+				<pitch>
+					<step>F</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="start" />
+				</notations>
+				<lyric default-y="-80" name="verse" number="1">
+					<syllabic>end</syllabic>
+					<text>men.</text>
+					<extend />
+				</lyric>
+			</note>
+			<note>
+				<pitch>
+					<step>G</step>
+					<octave>3</octave>
+				</pitch>
+				<duration>768</duration>
+				<voice>1</voice>
+				<type>quarter</type>
+				<stem>none</stem>
+				<notations>
+					<slur number="1" type="stop" />
+				</notations>
+			</note>
+			<barline location="right">
+				<bar-style>light-heavy</bar-style>
+			</barline>
+		</measure>
+	</part></score-partwise>
