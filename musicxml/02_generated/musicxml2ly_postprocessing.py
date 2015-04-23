@@ -27,9 +27,12 @@ if __name__ == '__main__':
     try:
         glob_pattern = sys.argv[1]
     except IndexError:
-        glob_pattern = "*.xml"
+        glob_pattern = "*.ly"
 
-    xml_files = glob(glob_pattern)
+    if not glob_pattern.endswith('.ly'):
+        print("Warning: File pattern does not end with '.ly': '{}'".format(glob_pattern))
+
+    xml_files = sorted(glob(glob_pattern))
 
     for filename in xml_files:
         print("Postprocessing file: '{}'".format(filename))
