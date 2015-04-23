@@ -182,7 +182,7 @@ class PieceCounter(object):
             except MeasureAttributeError:
                 pass
 
-    def consume(self, m, piece_number=None):
+    def consume(self, m, piece_numbers=None):
         """
         If `m` is a measure, check whether it belongs to the piece
         with number `piece_number`. If not, return `None`. Otherwise
@@ -195,6 +195,10 @@ class PieceCounter(object):
         unaltered copy of `m` is returned.
 
         """
+        if not isinstance(piece_numbers, list):
+            assert isinstance(piece_numbers, (NoneType, IntType))
+            piece_numbers = [piece_numbers]
+
         if not is_xml_measure(m):
             # Non-measure XML elements are ignored
             raise ValueError("PieceCounter.consume() received argument which was not a measure: '{}'".format(m))
@@ -204,7 +208,7 @@ class PieceCounter(object):
             print("[DDD] Found new piece: #{}".format(self.cnt))
             sys.stdout.flush()
 
-        if self.cnt != piece_number:
+        if self.cnt not in piece_numbers:
             res = None
         else:
             res = copy.deepcopy(m)
@@ -216,31 +220,36 @@ class PieceCounter(object):
         return res
 
 
-def copy_relevant_subtrees(node, pc, piece_number, piece_found):
+def copy_relevant_subtrees(node, pc, piece_numbers, piece_found):
     node_out = copy_element(node)
     for child in node:
         if not is_xml_measure(child):
-            subtree, piece_found_subtree = copy_relevant_subtrees(child, pc, piece_number, piece_found)
+            subtree, piece_found_subtree = copy_relevant_subtrees(child, pc, piece_numbers, piece_found)
             piece_found = piece_found or piece_found_subtree
             node_out.append(subtree)
         else:
-            res = pc.consume(child, piece_number)
+            res = pc.consume(child, piece_numbers)
             if res is not None:
                 piece_found = True
                 node_out.append(res)
     return node_out, piece_found
 
 
-def extract_piece(xml_string, number):
-    pc = PieceCounter()
+def extract_piece_from_string(xml_string, numbers):
     print "[DDD] Converting string to XML tree... ",
     sys.stdout.flush()
     tree = ET.fromstring(xml_string)
     print "Done."
-    tree_out, piece_found = copy_relevant_subtrees(tree, pc, number, False)
-
-    if not piece_found:
-        raise NoSuchPieceError("Piece number #{} not found in XML string.".format(number))
-
+    tree_out = extract_piece(tree, numbers)
     result = ET.tostring(tree_out)
     return result
+
+
+def extract_piece(tree, numbers):
+    pc = PieceCounter()
+    tree_out, piece_found = copy_relevant_subtrees(tree, pc, numbers, False)
+
+    if not piece_found:
+        raise NoSuchPieceError("None of the piece numbers were found in XML string: {}".format(numbers))
+
+    return tree_out

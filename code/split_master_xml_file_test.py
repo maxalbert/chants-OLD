@@ -307,10 +307,10 @@ class TestPieceCounter():
         m3 = make_measure(1, None, extra_string=key_str)
         foo = ET.fromstring("<foo></foo>")
 
-        res1 = pc.consume(m1, piece_number=3)
+        res1 = pc.consume(m1, piece_numbers=3)
         assert res1 is None
 
-        res2 = pc.consume(m1, piece_number=7)
+        res2 = pc.consume(m1, piece_numbers=7)
         assert xml_is_equal(res2, m1)
         assert_attribute_equal(res2, 'divisions', div_str)
         assert_has_not_attribute(res2, 'key')
@@ -318,7 +318,7 @@ class TestPieceCounter():
         assert_has_not_attribute(res2, 'time')
 
         # Since m2 is not an initial measure, it should be returned unaltered
-        res3 = pc.consume(m2, piece_number=7)
+        res3 = pc.consume(m2, piece_numbers=7)
         assert xml_is_equal(res3, m2)
         assert_attribute_equal(res3, 'key', key_str)
         assert_has_not_attribute(res3, 'division')
@@ -328,14 +328,14 @@ class TestPieceCounter():
         # Since m3 is an initial measure and the previous one m2 was a
         # final measure, the measure attributes of m3 should be
         # updated from the ones in m2.
-        res4 = pc.consume(m3, piece_number=8)
+        res4 = pc.consume(m3, piece_numbers=8)
         assert_attribute_equal(res4, 'divisions', div_str)
         assert_attribute_equal(res4, 'key', key_str)
         assert_has_not_attribute(res4, 'clef')
         assert_has_not_attribute(res4, 'time')
 
         with pytest.raises(ValueError):
-            pc.consume(foo, piece_number=None)
+            pc.consume(foo, piece_numbers=None)
 
     def test_counter_should_increase_only_at_boundaries(self):
         m1 = make_measure(1, None)           # initial measure
@@ -571,7 +571,7 @@ def test_copy_tree():
     assert xml_is_equal(tree, tree2)
 
 
-def test_extract_piece():
+def test_extract_piece_from_string():
     div_str = "<divisions>768</divisions>"
     key_str = textwrap.dedent("""
             <key>
@@ -630,14 +630,14 @@ def test_extract_piece():
     xml_piece_1_expected = make_piece_xml(measures_piece_1)
     xml_piece_2_expected = make_piece_xml(measures_piece_2_expected)
 
-    xml_piece_1_extracted = extract_piece(xml_full, 1)
-    xml_piece_2_extracted = extract_piece(xml_full, 2)
+    xml_piece_1_extracted = extract_piece_from_string(xml_full, 1)
+    xml_piece_2_extracted = extract_piece_from_string(xml_full, 2)
 
     assert xml_strings_are_equivalent(xml_piece_1_expected, xml_piece_1_extracted)
     assert xml_strings_are_equivalent(xml_piece_2_expected, xml_piece_2_extracted)
 
     with pytest.raises(NoSuchPieceError):
-        extract_piece(xml_full, 0)
+        extract_piece_from_string(xml_full, 0)
 
     with pytest.raises(NoSuchPieceError):
-        extract_piece(xml_full, 3)
+        extract_piece_from_string(xml_full, 3)
