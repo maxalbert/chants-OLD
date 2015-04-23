@@ -678,3 +678,57 @@ def test_stress_test_extract_piece_from_string():
     # first measure of each piece have been updated during extraction.
     #
     #assert xml_is_equal(tree, all_pieces)
+
+
+def test_get_piece_title():
+    xml_top = textwrap.dedent("""
+        <score-partwise version="3.0">
+           <movement-title>Sequences from BNF lat 1112</movement-title>
+           <part id="P1">
+              <measure number="1">
+                 <note>
+                    <pitch><step>A</step><octave>3</octave></pitch>
+                    <direction placement="above">
+                       <direction-type>
+                          <words>259v</words>
+                       </direction-type>
+                    </direction>
+        """)
+    xml_bottom = textwrap.dedent("""
+                 </note>
+                 <note><pitch><step>G</step><octave>3</octave></pitch></note>
+              </measure>
+           </part>
+        <score-partwise>
+        """)
+
+    def make_title_xml(title):
+        return textwrap.dedent("""
+                    <direction placement="above">
+                       <direction-type>
+                          <words>{title}</words>
+                       </direction-type>
+                    </direction>
+        """.format(title=title))
+
+    xml_title1 = make_title_xml("1) Salus eterna")
+    xml_title2 = make_title_xml("61) O Maria stella maris")
+
+    xml_piece1 = xml_top + xml_title1 + xml_bottom
+    xml_piece2 = xml_top + xml_title2 + xml_bottom
+    xml_piece3 = xml_top + xml_bottom
+    xml_piece4 = xml_top + xml_title1 + xml_title2 + xml_bottom
+
+    title1, title1_sanitized = get_piece_title(xml_piece1)
+    title2, title2_sanitized = get_piece_title(xml_piece2)
+
+    assert title1 == "1) Salus eterna"
+    assert title1_sanitized == "01_Salus_eterna"
+    assert title2 == "61) O Maria stella maris"
+    assert title2_sanitized == "61_O_Maria_stella_maris"
+
+    # No piece title, or more than one piece title, should throw exception
+    with pytest.raises(NoPieceTitleError):
+        get_piece_title(xml_piece3)
+    with pytest.raises(MultiplePieceTitlesError):
+        get_piece_title(xml_piece4)

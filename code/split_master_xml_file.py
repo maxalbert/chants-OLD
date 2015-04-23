@@ -21,6 +21,14 @@ class NoSuchPieceError(Exception):
     pass
 
 
+class NoPieceTitleError(Exception):
+    pass
+
+
+class MultiplePieceTitlesError(Exception):
+    pass
+
+
 def check_xml_type(element, xml_type):
     if not isinstance(element, ET.Element):
         raise TypeError("Not an XML element: '{}' (type: {})".format(element, type(element)))
@@ -271,3 +279,22 @@ def extract_piece(tree, numbers):
         raise NoSuchPieceError("None of the piece numbers were found in XML string: {}".format(numbers))
 
     return tree_out
+
+
+def get_piece_title(xml_string):
+    pattern = '<words>((\d+)\) (.*?))</words>'
+    titles_found = re.findall(pattern, xml_string)
+
+    if len(titles_found) == 0:
+        raise NoPieceTitleError("No piece title found.")
+
+    if len(titles_found) > 1:
+        titles = ", ".join(['"{}"'.format(x) for (x, _, _) in titles_found])
+        raise MultiplePieceTitlesError(
+            "Expected exactly one title in piece but found {}: {}"
+            "".format(len(titles_found), titles))
+
+    m = re.search(pattern, xml_string)
+    title = m.group(1)
+    title_sanitized = "{:02d}_{}".format(int(m.group(2)), re.sub(' ', '_', m.group(3)))
+    return title, title_sanitized
