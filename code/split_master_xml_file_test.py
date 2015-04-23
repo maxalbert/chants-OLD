@@ -1,3 +1,4 @@
+import os
 import pytest
 import textwrap
 import xml.etree.ElementTree as ET
@@ -732,3 +733,10 @@ def test_get_piece_title():
         get_piece_title(xml_piece3)
     with pytest.raises(MultiplePieceTitlesError):
         get_piece_title(xml_piece4)
+
+
+def test_split_pieces(tmpdir):
+    tmpdir = str(tmpdir)
+    split_pieces('sample_for_tests.xml', output_dir=tmpdir)
+    assert os.path.exists(os.path.join(tmpdir, '01_Salus_eterna.xml'))
+    assert os.path.exists(os.path.join(tmpdir, '61_O_Maria_stella_maris.xml'))

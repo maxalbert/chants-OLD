@@ -2,6 +2,7 @@ from types import NoneType, IntType
 import xml.etree.ElementTree as ET
 import copy
 import sys
+import os
 import re
 
 
@@ -298,3 +299,48 @@ def get_piece_title(xml_string):
     title = m.group(1)
     title_sanitized = "{:02d}_{}".format(int(m.group(2)), re.sub(' ', '_', m.group(3)))
     return title, title_sanitized
+
+
+def build_xml_tree(xmlfilename):
+    with open(xmlfilename, 'r') as f:
+        contents = f.read()
+
+    print("Building XML tree from file '{}'...".format(xmlfilename))
+    tree = ET.fromstring(contents)
+    print("Done.")
+
+    return tree
+
+
+def write_piece_to_file(piece, output_dir):
+    """
+    Write the given piece to a file. The filename is automatically
+    generated from the title extracted from the piece. In addition,
+    the title is adapted within the XML before writing the file.
+
+    """
+    assert isinstance(piece, ET.Element)
+
+    title, title_sanitized = get_piece_title(ET.tostring(piece))
+
+    # Adapt title in XML
+    piece.find('movement-title').text = title
+
+    filename= os.path.join(output_dir, title_sanitized + '.xml')
+    print("Writing extracted piece to file '{}'".format(filename))
+    with open(filename, 'w') as f:
+        f.write(ET.tostring(piece))
+
+
+def split_pieces(xmlfilename, output_dir):
+    tree = build_xml_tree(xmlfilename)
+
+    piece_num = 1
+    try:
+        while True:
+            piece = extract_piece(tree, piece_num)
+            write_piece_to_file(piece, output_dir)
+            piece_num += 1
+    except NoSuchPieceError:
+        # All pieces have been found
+        pass
