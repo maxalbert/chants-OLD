@@ -27,7 +27,7 @@
         }
     }
 PartPOneVoiceOne =  \relative e {
-    \clef "treble_8" \key c \none \time 27/4 \pageBreak | % 1
+    \clef "treble_8" \key c \major \time 27/4 \pageBreak | % 1
     e4 ^"300v" ^"76) Psallat chorus corde mundo" -"Analecta Hymnica,
     vol. 44, no. 341, p. 311 (pp. 309-312)." g4 ( g4 ) a4 g4 g4 f4 g4 g4
     \mark \markup { \musicglyph #"scripts.segno" } c4 ( b4 -"Change of

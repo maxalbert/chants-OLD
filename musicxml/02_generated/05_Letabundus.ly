@@ -46,7 +46,7 @@ PartPOneVoiceOne =  \relative c' {
     ( g4 ) g4 ( a4 ) c4 d4 ( bes4 ) c4 c4 c4 ( d4 ) e4 e4 ( d4 ) f4 f4 (
     d4 ) e4 c4 d4 ( c4 ) d4 ( e4 d4 ) c4 \bar "||"
     \break | % 7
-    \key c \none \time 26/4 g'4 g4 a4 f4 g4 \slurDotted f4 ( \slurSolid
+    \key c \major \time 26/4 g'4 g4 a4 f4 g4 \slurDotted f4 ( \slurSolid
     e4 d4 ) e4 g4 e4 f4 d4 c4 ( d4 e4 ) e4 e4 f4 ( d4 ) d4 ( c4 ) d4 ( e4
     d4 ) c4 | % 8
     g'4 g4 a4 f4 g4 \slurDotted f4 ( \slurSolid e4 d4 ) e4 g4 e4 f4 d4 c4

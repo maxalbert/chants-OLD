@@ -27,7 +27,7 @@
         }
     }
 PartPOneVoiceOne =  \relative a {
-    \clef "treble_8" \key c \none \time 32/4 \pageBreak | % 1
+    \clef "treble_8" \key c \major \time 32/4 \pageBreak | % 1
     a4 ^"75) Uirgines egregie" -"Analecta Hymnica, vol. 55, no. 24, pp.
     28-29." a4 a4 g4 a4 ( g4 ) f4 e4 ( f4 ) g4 f4 e4 d4 f4 ( g4 ) a4
     ^"300r" a4 b4 a4 g4 g4 f4 e4 ( f4 ) g4 f4 e4 ( d4 ) c4 d4 ( e4 ) d4
