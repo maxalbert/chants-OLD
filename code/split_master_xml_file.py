@@ -254,7 +254,7 @@ def copy_relevant_subtrees(node, pc, piece_numbers, piece_found):
 
 
 def extract_piece_from_string(xml_string, numbers):
-    print "[DDD] Converting string to XML tree... ",
+    print "[DDD] Converting string to XML tree...",
     sys.stdout.flush()
     tree = ET.fromstring(xml_string)
     print "Done."
