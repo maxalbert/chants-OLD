@@ -76,8 +76,9 @@ PartPOneVoiceOne =  \relative c' {
     \time 41/4  e4 d4 ( e4 ) \slurDotted f4 ( \slurSolid e4 d4 ) c4 e4 f4
     g4 g4 g4 a4 g4 f4 g4 a4 g4 e4 g4 c,4 ( d4 e4 ) f4 ( e4 ) d4 ( c4 ) d4
     c4 bes4 d4 c4 ( d4 ) f4 ( e4 ) d4 ( c4 d4 ) a4 bes4 bes4 \break | % 22
-    \time 5/4  bes4 ( c4 bes4 ) a4 ( bes4 ) \bar "|."
+    \time 5/4  bes4 ( c4 bes4 ) a4 ( bes4 )
     -"This cadence could easily be a mistake.  It should not be taken as a very rare example of a Bb cadence without checking it against other mss."
+    \bar "|."
     }
 
 PartPOneVoiceOneLyricsOne =  \lyricmode { A -- ue ma -- "ri " -- a "gra
