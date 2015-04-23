@@ -657,3 +657,20 @@ def test_extract_piece_from_string():
     # measure of the second piece).
     xml_piece_1_and_2_extracted = extract_piece_from_string(xml_full, [1, 2])
     assert xml_strings_are_equivalent(xml_piece_1_and_2_expected, xml_piece_1_and_2_extracted)
+
+
+@pytest.mark.slow
+def test_stress_test_extract_piece_from_string():
+    filename = '../musicxml/01_orig/Sequences_from_BNF_lat_1112_UTF8.xml'
+    with open(filename, 'r') as f:
+        contents = f.read()
+    tree = ET.fromstring(contents)
+
+    piece_1 = extract_piece(tree, 1)
+    piece_2 = extract_piece(tree, 2)
+    all_pieces = extract_piece(tree, range(100))
+
+    # The following assert won't work because the attributes of the
+    # first measure of each piece have been updated during extraction.
+    #
+    #assert xml_is_equal(tree, all_pieces)
