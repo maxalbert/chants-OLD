@@ -182,15 +182,15 @@ def test_get_measure_attribute():
 
     assert_attribute_equal(m3, 'time', time_str)
 
-    with pytest.raises(AttributeError):
+    with pytest.raises(MeasureAttributeError):
         get_measure_attribute(m1, 'key')
-    with pytest.raises(AttributeError):
+    with pytest.raises(MeasureAttributeError):
         get_measure_attribute(m1, 'foo')
-    with pytest.raises(AttributeError):
+    with pytest.raises(MeasureAttributeError):
         get_measure_attribute(m2, 'time')
-    with pytest.raises(AttributeError):
+    with pytest.raises(MeasureAttributeError):
         get_measure_attribute(m3, 'div')
-    with pytest.raises(AttributeError):
+    with pytest.raises(MeasureAttributeError):
         get_measure_attribute(m4, 'key')
 
     with pytest.raises(TypeError):
