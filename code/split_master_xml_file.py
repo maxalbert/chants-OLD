@@ -208,7 +208,7 @@ class PieceCounter(object):
             res = None
         else:
             res = copy.deepcopy(m)
-            if is_initial_measure(m):
+            if is_initial_measure(m) and self._last_was_final:
                 res = update_measure_attributes(res, self.last_measure_attributes)
 
         self._last_was_final = is_final_measure_candidate(m)
@@ -224,19 +224,23 @@ def copy_relevant_subtrees(node, pc, piece_number, piece_found):
             piece_found = piece_found or piece_found_subtree
             node_out.append(subtree)
         else:
-            pc.consume(child)
-            if pc.cnt == piece_number:
+            res = pc.consume(child, piece_number)
+            if res is not None:
                 piece_found = True
-                node_out.append(copy.deepcopy(child))
+                node_out.append(res)
     return node_out, piece_found
 
 
 def extract_piece(xml_string, number):
     pc = PieceCounter()
+    print "[DDD] Converting string to XML tree... ",
+    sys.stdout.flush()
     tree = ET.fromstring(xml_string)
+    print "Done."
     tree_out, piece_found = copy_relevant_subtrees(tree, pc, number, False)
 
     if not piece_found:
         raise NoSuchPieceError("Piece number #{} not found in XML string.".format(number))
 
-    return ET.tostring(tree_out)
+    result = ET.tostring(tree_out)
+    return result

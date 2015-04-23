@@ -303,7 +303,7 @@ class TestPieceCounter():
         div_str = "<divisions>768</divisions>"
         key_str = "<key><fifths>0</fifths><mode>major</mode></key>"
         m1 = make_measure(3, None, extra_string=div_str)
-        m2 = make_measure(5, None, extra_string=key_str)
+        m2 = make_measure(5, 'light-heavy', extra_string=key_str)
         m3 = make_measure(1, None, extra_string=key_str)
         foo = ET.fromstring("<foo></foo>")
 
@@ -325,9 +325,10 @@ class TestPieceCounter():
         assert_has_not_attribute(res3, 'clef')
         assert_has_not_attribute(res3, 'time')
 
-        # Since m3 is an initial measure, the measure attributes
-        # should be updated from the previously seen measure.
-        res4 = pc.consume(m3, piece_number=7)
+        # Since m3 is an initial measure and the previous one m2 was a
+        # final measure, the measure attributes of m3 should be
+        # updated from the ones in m2.
+        res4 = pc.consume(m3, piece_number=8)
         assert_attribute_equal(res4, 'divisions', div_str)
         assert_attribute_equal(res4, 'key', key_str)
         assert_has_not_attribute(res4, 'clef')
@@ -379,7 +380,6 @@ class TestPieceCounter():
 
         for i in xrange(8):
             self._check_consume(pc, m2, 3)
-            self._check_consume(pc, foo, 3)  # non-measure elements should be ignored
         self._check_consume(pc, m3, 3)
         self._check_consume(pc, m1, 4)
 
