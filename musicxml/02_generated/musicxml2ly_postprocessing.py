@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 
+import sys
 from glob import glob
 
 
@@ -17,9 +18,14 @@ def tweak_key_none_to_major(s):
 
 
 if __name__ == '__main__':
-    xml_files = glob("*.xml")
+    try:
+        glob_pattern = sys.argv[1]
+    except IndexError:
+        glob_pattern = "*.xml"
+
+    xml_files = glob(glob_pattern)
 
     for filename in xml_files:
-        print("Postprocessing file: '{}'".format(filename)
+        print("Postprocessing file: '{}'".format(filename))
         s = read_file_contents(filename)
         s = tweak_key_none_to_major(s)
