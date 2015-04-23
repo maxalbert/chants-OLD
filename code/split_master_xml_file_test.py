@@ -197,6 +197,16 @@ def test_get_measure_attribute():
         get_measure_attribute('foo', 'key')
 
 
+def assert_attribute_equal(m, name, attr_string):
+    a = get_measure_attribute(m, name)
+    assert ET.tostring(a) == attr_string
+
+
+def assert_has_not_attribute(m, name):
+    with pytest.raises(MeasureAttributeError):
+        get_measure_attribute(m, name)
+
+
 def test_update_measure_attributes():
     div_str = "<divisions>768</divisions>"
     key_str = "<key><fifths>0</fifths><mode>major</mode></key>"
@@ -213,14 +223,6 @@ def test_update_measure_attributes():
     m1 = make_measure(3, None, extra_string=attrs1)
     m2 = make_measure(2, None, extra_string=attrs2)
     m3 = make_measure(9, None, extra_string=attrs3)
-
-    def assert_attribute_equal(m, name, attr_string):
-        a = get_measure_attribute(m, name)
-        assert ET.tostring(a) == attr_string
-
-    def assert_has_not_attribute(m, name):
-        with pytest.raises(MeasureAttributeError):
-            get_measure_attribute(m, name)
 
     m01 = update_measure_attributes(m0, get_measure_attributes(m1))
     assert_attribute_equal(m01, 'divisions', div_str)
@@ -298,14 +300,38 @@ class TestPieceCounter():
         pc.cnt = 7
         pc._last_was_final = False
 
-        m = make_measure(1, None)
+        div_str = "<divisions>768</divisions>"
+        key_str = "<key><fifths>0</fifths><mode>major</mode></key>"
+        m1 = make_measure(3, None, extra_string=div_str)
+        m2 = make_measure(5, None, extra_string=key_str)
+        m3 = make_measure(1, None, extra_string=key_str)
         foo = ET.fromstring("<foo></foo>")
 
-        m1_ret = pc.consume(m, piece_number=3)
-        assert m1_ret is None
+        res1 = pc.consume(m1, piece_number=3)
+        assert res1 is None
 
-        m2_ret = pc.consume(m, piece_number=7)
-        assert xml_is_equal(m2_ret, m)
+        res2 = pc.consume(m1, piece_number=7)
+        assert xml_is_equal(res2, m1)
+        assert_attribute_equal(res2, 'divisions', div_str)
+        assert_has_not_attribute(res2, 'key')
+        assert_has_not_attribute(res2, 'clef')
+        assert_has_not_attribute(res2, 'time')
+
+        # Since m2 is not an initial measure, it should be returned unaltered
+        res3 = pc.consume(m2, piece_number=7)
+        assert xml_is_equal(res3, m2)
+        assert_attribute_equal(res3, 'key', key_str)
+        assert_has_not_attribute(res3, 'division')
+        assert_has_not_attribute(res3, 'clef')
+        assert_has_not_attribute(res3, 'time')
+
+        # Since m3 is an initial measure, the measure attributes
+        # should be updated from the previously seen measure.
+        res4 = pc.consume(m3, piece_number=7)
+        assert_attribute_equal(res4, 'divisions', div_str)
+        assert_attribute_equal(res4, 'key', key_str)
+        assert_has_not_attribute(res4, 'clef')
+        assert_has_not_attribute(res4, 'time')
 
         with pytest.raises(ValueError):
             pc.consume(foo, piece_number=None)

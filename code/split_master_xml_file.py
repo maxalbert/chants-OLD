@@ -179,7 +179,7 @@ class PieceCounter(object):
         for name in self.attr_names:
             try:
                 self.last_measure_attributes[name] = get_measure_attribute(m, name)
-            except AttributeError:
+            except MeasureAttributeError:
                 pass
 
     def consume(self, m, piece_number=None):
@@ -212,6 +212,7 @@ class PieceCounter(object):
                 res = update_measure_attributes(res, self.last_measure_attributes)
 
         self._last_was_final = is_final_measure_candidate(m)
+        self.update_last_measure_attributes(m)
         return res
 
 
