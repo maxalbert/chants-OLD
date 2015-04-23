@@ -629,6 +629,7 @@ def test_extract_piece_from_string():
     xml_full = make_piece_xml(measures_piece_1 + measures_piece_2)
     xml_piece_1_expected = make_piece_xml(measures_piece_1)
     xml_piece_2_expected = make_piece_xml(measures_piece_2_expected)
+    xml_piece_1_and_2_expected = make_piece_xml(measures_piece_1 + measures_piece_2_expected)
 
     xml_piece_1_extracted = extract_piece_from_string(xml_full, 1)
     xml_piece_2_extracted = extract_piece_from_string(xml_full, 2)
@@ -641,3 +642,9 @@ def test_extract_piece_from_string():
 
     with pytest.raises(NoSuchPieceError):
         extract_piece_from_string(xml_full, 3)
+
+    # Check that extracting both pieces results in the whole score
+    # (same as original, except with extra attributes in the first
+    # measure of the second piece).
+    xml_piece_1_and_2_extracted = extract_piece_from_string(xml_full, [1, 2])
+    assert xml_strings_are_equivalent(xml_piece_1_and_2_expected, xml_piece_1_and_2_extracted)
