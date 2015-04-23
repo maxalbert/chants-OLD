@@ -223,12 +223,12 @@ class PieceCounter(object):
 
         if is_initial_measure(m) and self._last_was_final:
             self.cnt += 1
-            print("[DDD] Found new piece: #{}".format(self.cnt))
-            sys.stdout.flush()
 
         if piece_numbers is None or self.cnt in piece_numbers:
             res = copy.deepcopy(m)
             if is_initial_measure(m) and self._last_was_final:
+                print("[DDD] Found piece: #{}".format(self.cnt))
+                sys.stdout.flush()
                 res = update_measure_attributes(res, self.last_measure_attributes)
         else:
             res = None
