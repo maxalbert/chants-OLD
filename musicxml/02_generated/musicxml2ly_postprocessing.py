@@ -11,6 +11,11 @@ def read_file_contents(filename):
     return contents
 
 
+def write_file_contents(filename, contents):
+    with open(filename, 'w') as f:
+        f.write(contents)
+
+
 def tweak_key_none_to_major(s):
     if re.search(r'\\key c \\none', s):
         print(r'Replacing:  "\key c \none" -> "\key c \major"')
@@ -30,3 +35,4 @@ if __name__ == '__main__':
         print("Postprocessing file: '{}'".format(filename))
         s = read_file_contents(filename)
         s = tweak_key_none_to_major(s)
+        write_file_contents(filename, s)
