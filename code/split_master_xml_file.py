@@ -1,5 +1,6 @@
 import xml.etree.ElementTree as ET
 import copy
+import sys
 import re
 
 
@@ -181,20 +182,37 @@ class PieceCounter(object):
             except AttributeError:
                 pass
 
-    def consume(self, m):
+    def consume(self, m, piece_number=None):
+        """
+        If `m` is a measure, check whether it belongs to the piece
+        with number `piece_number`. If not, return `None`. Otherwise
+        return a copy of `m`. If `m` is the first measure of the piece
+        then any attributes in [divisions, key, time, clef] which
+        aren't set in it are updated with the values from the
+        previously seen measure.
+
+        If `m` is not a measure but a different XML element, an
+        unaltered copy of `m` is returned.
+
+        """
         if not is_xml_measure(m):
             # Non-measure XML elements are ignored
-            return
-
-        self.update_last_measure_attributes(m)
+            raise ValueError("PieceCounter.consume() received argument which was not a measure: '{}'".format(m))
 
         if is_initial_measure(m) and self._last_was_final:
             self.cnt += 1
             print("[DDD] Found new piece: #{}".format(self.cnt))
-            import sys
             sys.stdout.flush()
-            update_measure_attributes(m, self.last_measure_attributes, inplace=True)
+
+        if self.cnt != piece_number:
+            res = None
+        else:
+            res = copy.deepcopy(m)
+            if is_initial_measure(m):
+                res = update_measure_attributes(res, self.last_measure_attributes)
+
         self._last_was_final = is_final_measure_candidate(m)
+        return res
 
 
 def copy_relevant_subtrees(node, pc, piece_number, piece_found):

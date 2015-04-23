@@ -293,6 +293,23 @@ class TestPieceCounter():
         pc.consume(m)
         assert pc.cnt == number
 
+    def test_consume_returns_the_right_thing(self):
+        pc = PieceCounter()
+        pc.cnt = 7
+        pc._last_was_final = False
+
+        m = make_measure(1, None)
+        foo = ET.fromstring("<foo></foo>")
+
+        m1_ret = pc.consume(m, piece_number=3)
+        assert m1_ret is None
+
+        m2_ret = pc.consume(m, piece_number=7)
+        assert xml_is_equal(m2_ret, m)
+
+        with pytest.raises(ValueError):
+            pc.consume(foo, piece_number=None)
+
     def test_counter_should_increase_only_at_boundaries(self):
         m1 = make_measure(1, None)           # initial measure
         m2 = make_measure(4, None)           # middle
