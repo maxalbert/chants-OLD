@@ -333,6 +333,9 @@ def write_piece_to_file(piece, output_dir):
 
 
 def split_pieces(xmlfilename, output_dir):
+    print("Splitting file '{}' into multiple pieces.".format(xmlfilename))
+    print("Output will be placed in directory: '{}'.".format(output_dir))
+
     tree = build_xml_tree(xmlfilename)
 
     piece_num = 1
@@ -344,3 +347,18 @@ def split_pieces(xmlfilename, output_dir):
     except NoSuchPieceError:
         # All pieces have been found
         pass
+
+
+if __name__ == '__main__':
+    try:
+        xmlfilename = sys.argv[1]
+    except IndexError:
+        print("Usage: {} FILENAME.xml [OUTPUT_DIR]".format(__file__))
+        sys.exit()
+
+    try:
+        output_dir = sys.argv[2]
+    except IndexError:
+        output_dir = os.curdir
+
+    split_pieces(xmlfilename, output_dir)
