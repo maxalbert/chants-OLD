@@ -17,9 +17,13 @@ def write_file_contents(filename, contents):
 
 
 def tweak_key_none_to_major(s):
-    if re.search(r'\\key c \\none', s):
+    pattern = r'\\key c \\none'
+    repl = r'\\key c \\major'
+
+    if re.search(pattern, s):
         print(r'Replacing:  "\key c \none" -> "\key c \major"')
-        s = re.sub(r'\\key c \\none', r'\\key c \\major', s)
+        s = re.sub(pattern, repl, s)
+
     return s
 
 
