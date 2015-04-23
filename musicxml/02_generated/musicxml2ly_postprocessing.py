@@ -29,14 +29,16 @@ def tweak_key_none_to_major(s):
 
 if __name__ == '__main__':
     try:
-        glob_pattern = sys.argv[1]
+        glob_patterns = sys.argv[1:]
     except IndexError:
-        glob_pattern = "*.ly"
+        glob_patterns = ["*.ly"]
 
-    if not glob_pattern.endswith('.ly'):
-        print("Warning: File pattern does not end with '.ly': '{}'".format(glob_pattern))
-
-    xml_files = sorted(glob(glob_pattern))
+    xml_files = []
+    for pattern in glob_patterns:
+        if not pattern.endswith('.ly'):
+            print("Warning: File pattern does not end with '.ly': '{}'".format(pattern))
+        xml_files += glob(pattern)
+    xml_files = sorted(xml_files)
 
     for filename in xml_files:
         print("Postprocessing file: '{}'".format(filename))
