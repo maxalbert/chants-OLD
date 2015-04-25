@@ -5,7 +5,7 @@
 \header {
     encodingsoftware = "Sibelius 6.2"
     tagline = "Sibelius 6.2"
-    encodingdate = "2015-04-22"
+    encodingdate = "2015-04-24"
     copyright = "Copyright © "
     title = "75) Uirgines egregie"
     }
@@ -27,11 +27,10 @@
         }
     }
 PartPOneVoiceOne =  \relative a {
-    \clef "treble_8" \key c \major \time 32/4 \pageBreak | % 1
-    a4 ^"75) Uirgines egregie" -"Analecta Hymnica, vol. 55, no. 24, pp.
-    28-29." a4 a4 g4 a4 ( g4 ) f4 e4 ( f4 ) g4 f4 e4 d4 f4 ( g4 ) a4
-    ^"300r" a4 b4 a4 g4 g4 f4 e4 ( f4 ) g4 f4 e4 ( d4 ) c4 d4 ( e4 ) d4
-    \break | % 2
+    \clef "treble_8" \key c \major \time 32/4 | % 1
+    a4 -"Analecta Hymnica, vol. 55, no. 24, pp. 28-29." a4 a4 g4 a4 ( g4
+    ) f4 e4 ( f4 ) g4 f4 e4 d4 f4 ( g4 ) a4 ^"300r" a4 b4 a4 g4 g4 f4 e4
+    ( f4 ) g4 f4 e4 ( d4 ) c4 d4 ( e4 ) d4 \break | % 2
     \time 30/4  a'4 a4 a4 g4 g4 f4 e4 ( f4 ) g4 f4 e4 d4 e4 ( g4 ) a4 a4
     c4 a4 f4 g4 f4 e4 ( f4 ) d4 c4 d4 e4 f4 ( e4 ) d4 \break | % 3
     \time 29/4  e4 f4 g4 g4 f4 ( e4 ) f4 g4 g4 bes4 g4 f4 a4 a4 a4 c4 a4

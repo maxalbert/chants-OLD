@@ -5,7 +5,7 @@
 \header {
     encodingsoftware = "Sibelius 6.2"
     tagline = "Sibelius 6.2"
-    encodingdate = "2015-04-22"
+    encodingdate = "2015-04-24"
     copyright = "Copyright © "
     title = "76) Psallat chorus corde mundo"
     }
@@ -27,12 +27,12 @@
         }
     }
 PartPOneVoiceOne =  \relative e {
-    \clef "treble_8" \key c \major \time 27/4 \pageBreak | % 1
-    e4 ^"300v" ^"76) Psallat chorus corde mundo" -"Analecta Hymnica,
-    vol. 44, no. 341, p. 311 (pp. 309-312)." g4 ( g4 ) a4 g4 g4 f4 g4 g4
-    \mark \markup { \musicglyph #"scripts.segno" } c4 ( b4 -"Change of
-    text: Analectica Hymnica, vol. 55, no. 6, pp. 9-11." ) a4 g4 a4 b4 g4
-    \slurDotted a4 ( \slurSolid g4 f4 ) e4 d4 f4 a4 g4 f4 g4 g4 \break | % 2
+    \clef "treble_8" \key c \major \time 27/4 | % 1
+    e4 ^"300v" -"Analecta Hymnica, vol. 44, no. 341, p. 311 (pp.
+    309-312)." g4 ( g4 ) a4 g4 g4 f4 g4 g4 \mark \markup { \musicglyph
+        #"scripts.segno" } c4 ( b4 -"Change of text: Analectica Hymnica,
+    vol. 55, no. 6, pp. 9-11." ) a4 g4 a4 b4 g4 \slurDotted a4 (
+    \slurSolid g4 f4 ) e4 d4 f4 a4 g4 f4 g4 g4 \break | % 2
     \time 29/4  e4 g4 ( g4 ) a4 g4 g4 f4 g4 g4 c4 ( b4 ) a4
     -"(precessit)" g4 a4 b4 g4 \slurDotted a4 ( \slurSolid g4 f4 ) e4 (
     e4 g4 ) d4 f4 a4 g4 f4 g4 g4 \break | % 3

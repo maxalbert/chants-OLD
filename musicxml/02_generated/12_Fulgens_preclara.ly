@@ -5,7 +5,7 @@
 \header {
     encodingsoftware = "Sibelius 6.2"
     tagline = "Sibelius 6.2"
-    encodingdate = "2015-04-22"
+    encodingdate = "2015-04-24"
     copyright = "Copyright © "
     title = "12) Fulgens preclara"
     }
@@ -27,12 +27,12 @@
         }
     }
 PartPOneVoiceOne =  \relative g {
-    \clef "treble_8" \key c \major \time 43/4 \pageBreak | % 1
-    g4 ^"264r" ^"12) Fulgens preclara" -"Analecta Hymnica, vol. 7, no.
-    44, pp. 57-59." ( b4 ) a4 b4 ( \slurDotted c4 ) ( \slurSolid b4 a4 )
-    a4 ( g4 ) c4 ( d4 \slurDotted e4 ) ( \slurSolid d4 c4 ) d4 c4 d4 e4
-    d4 c4 d4 c4 d4 e4 c4 a4 bes4 a4 g4 c4 c4 g4 c4 c4 d4 c4 d4 e4 d4 c4
-    bes4 c4 c4 \break | % 2
+    \clef "treble_8" \key c \major \time 43/4 | % 1
+    g4 ^"264r" -"Analecta Hymnica, vol. 7, no. 44, pp. 57-59." ( b4 ) a4
+    b4 ( \slurDotted c4 ) ( \slurSolid b4 a4 ) a4 ( g4 ) c4 ( d4
+    \slurDotted e4 ) ( \slurSolid d4 c4 ) d4 c4 d4 e4 d4 c4 d4 c4 d4 e4
+    c4 a4 bes4 a4 g4 c4 c4 g4 c4 c4 d4 c4 d4 e4 d4 c4 bes4 c4 c4 \break
+    | % 2
     \time 27/4  d4 f4 e4 c4 d4 c4 d4 e4 c4 a4 bes4 a4 g4 c4 c4 g4 c4 c4
     d4 c4 d4 e4 d4 c4 bes4 c4 c4 \break | % 3
     \time 17/4  e4 g4 f4 e4 ( c4 ) c4 d4 c4 d4 c4 d4 f4 d4 d4 c4 e4 e4 | % 4
@@ -87,24 +87,15 @@ PartPOneVoiceOne =  \relative g {
     \time 15/4  a4 a4 ( c4 ) g4 a4 g4 g4 f4 g4 f4 g4 bes4 -\markup {
         \flat } g4 a4 a4 | % 29
     \time 10/4  a4 bes4 -\markup { \flat } g4 g4 f4 g4 g4 a4 s2
-    -"Amer-o-J." \bar "|."
-    \break | \barNumberCheck #30
-    \time 16/4  | \barNumberCheck #30
-    \[ g,4 -"The ficta recommended here is based on the assumption that
-    the opening \"fulgens preclara\" is not to be repeated in performance,
-    but simply shown here to connect the fragments." -"Same opening,
-    connecting the two fragments" ( b4 ) a4 ^"(Fulgens preclara:
-    fragment appearing later in the manuscript, 269v)" b4 ( \slurDotted
-    c4 ) ( \slurSolid b4 a4 ) a4 ^"269v" ( g4 ) c4 ( d4 \slurDotted e4 )
-    ( \slurSolid d4 c4 ) d4 c4 \] \break | % 31
-    \time 14/4  a4 c4 c4 d4 c4 a4 bes4 -\markup { \flat } g4 g4 f4 g4 a4
-    a4 a4 | % 32
+    -"Amer-o-J." \break | \barNumberCheck #30
+    \time 14/4  a,4 c4 c4 d4 c4 a4 bes4 -\markup { \flat } g4 g4 f4 g4 a4
+    a4 a4 | % 31
     a4 c4 c4 d4 c4 a4 bes4 -\markup { \flat } g4 g4 f4 g4 a4 a4 a4
-    \break | % 33
+    \break | % 32
     \time 16/4  a4 a4 g4 bes4 ( -\markup { \flat } c4 d4 ) c4 bes4 c4 a4
-    bes4 -\markup { \flat } g4 f4 g4 a4 a4 | % 34
+    bes4 -\markup { \flat } g4 f4 g4 a4 a4 | % 33
     a4 g4 bes4 ( -\markup { \flat } c4 d4 ) d4 c4 bes4 -\markup { \flat
-        } c4 a4 bes4 -"(nube)" g4 f4 g4 a4 a4 | % 35
+        } c4 a4 bes4 -"(nube)" g4 f4 g4 a4 a4 | % 34
     \time 9/4  a4 g4 bes4 ( -\markup { \flat } c4 d4 ) c4 bes4 -\markup
     { \flat } c4 a4 \bar "|."
     }
@@ -152,8 +143,7 @@ PartPOneVoiceOneLyricsOne =  \lyricmode { "Ful " -- "gens " __ \skip4
     -- mi -- na. Sol -- ue ne -- xo -- rum cri -- mi -- na. E -- lec --
     to -- rum ag -- mi -- na. Fac "te " -- cum re -- sur -- ge -- re ad
     be -- a -- tam glo -- ri -- am. Dig -- na re -- pen -- dens me -- ri
-    -- ta. "Ful " -- "gens " __ \skip4 "pre " -- "cla " -- "ra. " __
-    \skip4 Pa -- ra -- cli -- ti sanc -- ti con -- so -- la -- ti -- o
+    -- ta. Pa -- ra -- cli -- ti sanc -- ti con -- so -- la -- ti -- o
     -- nem pi -- am. Ex -- pec -- ta -- mus "se " -- cun -- dum pro --
     mis -- si -- o -- nem tu -- am. Per -- ac -- ta "as " -- cen -- si
     -- o -- nis sac -- ra sol -- lem -- pni -- a. Qui es "re " -- gres

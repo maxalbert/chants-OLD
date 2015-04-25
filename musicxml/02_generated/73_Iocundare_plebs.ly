@@ -5,7 +5,7 @@
 \header {
     encodingsoftware = "Sibelius 6.2"
     tagline = "Sibelius 6.2"
-    encodingdate = "2015-04-22"
+    encodingdate = "2015-04-24"
     copyright = "Copyright © "
     title = "73) Iocundare plebs"
     }
@@ -27,14 +27,13 @@
         }
     }
 PartPOneVoiceOne =  \relative f {
-    \clef "treble_8" \key c \major \time 38/4 \pageBreak | % 1
-    f4 ^"298v" ^"73) Iocundare plebs" -"The fact that the Bbs are so
-    carefully made explicit here makes me doubt their implicit presence
-    in other D dorian pieces in this collection." -"Adam of St. Victor,
-    vol. 3, no. CII, pp. 162-169." \slurDotted e4 ( \slurSolid d4 c4 ) d4
-    d4 f4 g4 a4 a4 bes4 a4 ( f4 ) g4 ( f4 ) e4 ( d4 ) f4 g4 a4 a4 c4 g4
-    a4 f4 d4 e4 f4 \slurDotted e4 ( \slurSolid d4 c4 ) e4 f4 d4 e4 c4 d4
-    d4 \break | % 2
+    \clef "treble_8" \key c \major \time 38/4 | % 1
+    f4 ^"298v" -"The fact that the Bbs are so carefully made explicit
+    here makes me doubt their implicit presence in other D dorian pieces
+    in this collection." -"Adam of St. Victor, vol. 3, no. CII, pp.
+    162-169." \slurDotted e4 ( \slurSolid d4 c4 ) d4 d4 f4 g4 a4 a4 bes4
+    a4 ( f4 ) g4 ( f4 ) e4 ( d4 ) f4 g4 a4 a4 c4 g4 a4 f4 d4 e4 f4
+    \slurDotted e4 ( \slurSolid d4 c4 ) e4 f4 d4 e4 c4 d4 d4 \break | % 2
     \time 31/4  e4 f4 g4 g4 g4 f4 g4 d4 f4 g4 a4 a4 bes4 g4 a4 a4 f4 e4
     f4 d4 f4 e4 d4 c4 f4 d4 e4 c4 f4 e4 d4 \break | % 3
     \time 41/4  f4 \slurDotted e4 ( \slurSolid d4 c4 ) d4 d4 f4 g4 a4 a4
