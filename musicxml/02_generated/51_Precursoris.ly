@@ -5,7 +5,7 @@
 \header {
     encodingsoftware = "Sibelius 6.2"
     tagline = "Sibelius 6.2"
-    encodingdate = "2015-04-22"
+    encodingdate = "2015-04-28"
     copyright = "Copyright © "
     title = "51) Precursoris"
     }
@@ -27,12 +27,10 @@
         }
     }
 PartPOneVoiceOne =  \relative d {
-    \clef "treble_8" \key c \major \time 27/4 \pageBreak | % 1
-    d4 ^"51) Precursoris" ^"285v" -"Analecta Hymnica, vol. 8, no.
-    197, pp. 151-152." g4 ( g4 ) a4 g4 g4 f4 g4
-    g4 c4 ( b4 ) a4 g4 a4 b4 g4
-    \slurDotted a4 ( \slurSolid g4 f4 ) e4 d4 f4
-    a4 g4 f4 g4 g4 | % 2
+    \clef "treble_8" \key c \major \time 27/4 | % 1
+    d4 ^"285v" -"Analecta Hymnica, vol. 8, no. 197, pp. 151-152." g4 ( g4
+    ) a4 g4 g4 f4 g4 g4 c4 ( b4 ) a4 g4 a4 b4 g4 \slurDotted a4 (
+    \slurSolid g4 f4 ) e4 d4 f4 a4 g4 f4 g4 g4 | % 2
     d4 g4 ( g4 ) a4 g4 g4 f4 g4 g4 c4 ( b4 ) a4 g4 a4 b4 g4 \slurDotted
     a4 ( \slurSolid g4 f4 ) e4 d4 f4 a4 g4 f4 g4 g4 \break | % 3
     \time 24/4  g4 a4 b4 g4 d4 f4 e4 d4 f4 g4 a4 f4 g4 a4 a4 g4 b4 g4 d'4
@@ -60,13 +58,13 @@ PartPOneVoiceOne =  \relative d {
     e4 d4 | % 14
     \time 24/4  d4 e4 f4 d4 e4 f4 g4 g4 f4 g4 a4 a4 bes4 g4 a4 a4 c4 d4
     ( c4 ) bes4 a4 g4 f4 g4 \bar "||"
-    \break | % 15
+    \pageBreak | % 15
     \key f \major \time 26/4 bes4 g4 a4 bes4 c4 d4 c4 ( bes4 ) a4 bes4 g4
     a4 bes4 c4 bes4 a4 g4 f4 g4 a4 bes4 c4 \slurDotted bes4 ( \slurSolid
     a4 g4 ) a4 | % 16
     bes4 g4 a4 bes4 c4 d4 c4 ( bes4 ) a4 bes4 g4 a4 bes4 c4 bes4 a4 g4 f4
     g4 a4 bes4 \slurDotted c4 ( \slurSolid bes4 a4 g4 ) a4 \bar "||"
-    \pageBreak | % 17
+    \break | % 17
     \key c \major \time 25/4 c4 d4 f4 e4 d4 c4 d4 ( e4 ) d4 c4 d4 f4 e4
     d4 c4 b4 ( -\markup { \natural } a4 ) g4 a4 c4 b4 a4 g4 f4 g4 | % 18
     c4 d4 f4 e4 d4 c4 d4 ( e4 ) d4 c4 d4 f4 e4 d4 c4 b4 ( a4 ) g4 a4 c4
