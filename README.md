@@ -3,5 +3,5 @@ This repository contains chants in MusicXML format. There is one
 that was edited. This has been split into individual pieces using
 Python scripts.
 
-Musical editing:   Asher Vijay Yampolsky
-Python scripting:  Maximilian Albert
+- Musical editing:   Asher Vijay Yampolsky
+- Python scripting:  Maximilian Albert
