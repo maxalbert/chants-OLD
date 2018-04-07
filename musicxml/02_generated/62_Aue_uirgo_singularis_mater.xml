@@ -14,7 +14,7 @@
 			<part-name print-object="no">[Tenor]</part-name><score-instrument id="P1-I1">
 				<instrument-name>Tenor</instrument-name><instrument-abbreviation>T.</instrument-abbreviation><instrument-sound>voice.tenor</instrument-sound><ensemble /></score-instrument><midi-instrument id="P1-I1">
 				<volume>79</volume><pan>32</pan></midi-instrument></score-part></part-list><part id="P1">
-		<measure implicit="yes" number="1">
+		<measure number="1">
 			<print new-page="yes" />
 			<attributes>
 				<time>
@@ -1219,7 +1219,7 @@
 			</note>
 		</measure>
 
-		<measure number="18">
+		<measure number="2">
 			<print new-system="yes" />
 			<attributes>
 				<time>
@@ -1890,7 +1890,7 @@
 			</note>
 		</measure>
 
-		<measure number="19">
+		<measure number="3">
 			<print new-system="yes" />
 			<attributes>
 				<time>
@@ -2571,7 +2571,7 @@
 			</note>
 		</measure>
 
-		<measure number="20">
+		<measure number="4">
 			<print new-system="yes" />
 			<attributes>
 				<time>
@@ -3076,7 +3076,7 @@
 			</note>
 		</measure>
 
-		<measure number="21">
+		<measure number="5">
 			<print new-system="yes" />
 			<note>
 				<pitch>
@@ -3575,7 +3575,7 @@
 			</note>
 		</measure>
 
-		<measure number="22">
+		<measure number="6">
 			<print new-page="yes" />
 			<attributes>
 				<time>
@@ -4124,7 +4124,7 @@
 			</note>
 		</measure>
 
-		<measure number="23">
+		<measure number="7">
 			<print new-system="yes" />
 			<attributes>
 				<time>
@@ -4700,7 +4700,7 @@
 			</note>
 		</measure>
 
-		<measure number="24">
+		<measure number="8">
 			<print new-system="yes" />
 			<attributes>
 				<time>
@@ -5266,7 +5266,7 @@
 			</note>
 		</measure>
 
-		<measure number="25">
+		<measure number="9">
 			<print new-system="yes" />
 			<attributes>
 				<time>
@@ -5822,7 +5822,7 @@
 			</note>
 		</measure>
 
-		<measure number="26">
+		<measure number="10">
 			<print new-system="yes" />
 			<attributes>
 				<time>
@@ -6317,7 +6317,7 @@
 			</note>
 		</measure>
 
-		<measure number="27">
+		<measure number="11">
 			<print new-system="yes" />
 			<note>
 				<pitch>
@@ -6806,7 +6806,7 @@
 			</note>
 		</measure>
 
-		<measure number="28">
+		<measure number="12">
 			<print new-page="yes" />
 			<attributes>
 				<time>
@@ -7286,7 +7286,7 @@
 			</note>
 		</measure>
 
-		<measure number="29">
+		<measure number="13">
 			<print new-system="yes" />
 			<attributes>
 				<time>
@@ -7781,7 +7781,7 @@
 			</note>
 		</measure>
 
-		<measure number="30">
+		<measure number="14">
 			<print new-system="yes" />
 			<note>
 				<pitch>
@@ -8270,7 +8270,7 @@
 			</note>
 		</measure>
 
-		<measure number="31">
+		<measure number="15">
 			<print new-system="yes" />
 			<note>
 				<pitch>
@@ -8759,7 +8759,7 @@
 			</note>
 		</measure>
 
-		<measure number="32">
+		<measure number="16">
 			<print new-system="yes" />
 			<attributes>
 				<time>
@@ -9362,7 +9362,7 @@
 			</note>
 		</measure>
 
-		<measure number="33">
+		<measure number="17">
 			<print new-system="yes" />
 			<note>
 				<pitch>
@@ -9959,7 +9959,7 @@
 			</note>
 		</measure>
 
-		<measure number="34">
+		<measure number="18">
 			<print new-system="yes" />
 			<attributes>
 				<time>
