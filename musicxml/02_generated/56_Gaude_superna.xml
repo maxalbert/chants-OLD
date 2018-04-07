@@ -6892,7 +6892,7 @@
 			<print new-system="yes" />
 			<attributes>
 				<time>
-					<beats>21</beats>
+					<beats>42</beats>
 					<beat-type>4</beat-type>
 				</time>
 			</attributes>
@@ -7507,7 +7507,7 @@
 			<print new-system="yes" />
 			<attributes>
 				<time>
-					<beats>17</beats>
+					<beats>34</beats>
 					<beat-type>4</beat-type>
 				</time>
 			</attributes>
